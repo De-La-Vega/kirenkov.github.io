@@ -47,6 +47,7 @@ $(function(){
 	// Validate
 	$('form').each(function(){
 		var that = $(this);
+
 		that.validate({
 			rules: {
 				name: {
@@ -71,24 +72,20 @@ $(function(){
 				message: {}
 			},
 			submitHandler: function(){
-				// that.hide();
-				// $.post('order.php', that.serialize(), function (response) {
-				// 	that.parent('div').html('<div class="alert alert-success form-response">' + response + '</div>');
-				// });
-
-				console.log(that);
-				console.log(that.serialize());
+				that.hide();
 
 				$.ajax({
-					url: "https://formspree.io/kirenkov.vitaliy@gmail.com", 
-					method: "POST",
+					url: 'https://formspree.io/kirenkov.vitaliy@gmail.com', 
+					method: 'POST',
 					data: {
-						message: "hello!"
+						name: document.getElementById('contacts-form-name').value,
+						email: document.getElementById('contacts-form-email').value,
+						message: document.getElementById('contacts-form-message').value
 					},
-					dataType: "json"
-				}).done(function() {
-					// $(this).addClass("done");
-					console.log('send');
+					dataType: 'json'
+				}).done(function(response) {
+					console.log('response', response);
+					that.parent('div').html('<div class="alert alert-success form-response">Your message was sent.</div>');
 				});
 
 			}
