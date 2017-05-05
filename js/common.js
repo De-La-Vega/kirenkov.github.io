@@ -45,39 +45,39 @@ $(function(){
 	});
 
 	// Validate
-	$('form').each(function(){
-		var that = $(this);
-		that.validate({
-			rules: {
-				name: {
-					required: true,
-					minlength: 2,
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {}
-			},
-			messages: {
-				name: {
-					required: 'Write your name',
-					minlength: 'Minimum 2 characters!'
-				},
-				email: {
-					required: 'Write your email address',
-					email: 'Need a valid email address!'
-				},
-				message: {}
-			},
-			submitHandler: function(){
-				that.hide();
-				$.post('order.php', that.serialize(), function (response) {
-					that.parent('div').html('<div class="alert alert-success form-response">' + response + '</div>');
-				});
-			}
-		});
-	});
+	// $('form').each(function(){
+	// 	var that = $(this);
+	// 	that.validate({
+	// 		rules: {
+	// 			name: {
+	// 				required: true,
+	// 				minlength: 2,
+	// 			},
+	// 			email: {
+	// 				required: true,
+	// 				email: true
+	// 			},
+	// 			message: {}
+	// 		},
+	// 		messages: {
+	// 			name: {
+	// 				required: 'Write your name',
+	// 				minlength: 'Minimum 2 characters!'
+	// 			},
+	// 			email: {
+	// 				required: 'Write your email address',
+	// 				email: 'Need a valid email address!'
+	// 			},
+	// 			message: {}
+	// 		},
+	// 		submitHandler: function(){
+	// 			that.hide();
+	// 			$.post('order.php', that.serialize(), function (response) {
+	// 				that.parent('div').html('<div class="alert alert-success form-response">' + response + '</div>');
+	// 			});
+	// 		}
+	// 	});
+	// });
 
 	// Toggle navigation
 	$('.nav-toggle').on('click', function(e){
