@@ -17,19 +17,19 @@ TODO.
 
 ## Experience
 
-__June 2015 - Now__
-
-__IBM East Europe/Asia Ltd. (Russia, Moscow)__
-
-* full cycle of Largest Russia internet-bank development
-* team - more than 100 front-end, back-end developers, architects
-* methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
-* working with kanban boards, tasks planning
-* deep involvement into UX-concept preparation
+> June 2015 - Now
+> 
+> __IBM East Europe/Asia Ltd. (Russia, Moscow)__
+> 
+> * full cycle of Largest Russia internet-bank development
+> * team - more than 100 front-end, back-end developers, architects
+> * methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
+> * working with kanban boards, tasks planning
+> * deep involvement into UX-concept preparation
 
 ***
 
-__February 2014 - February 2015__
+February 2014 - February 2015
 
 __Media-Storm (Russia, Moscow)__
 
@@ -39,7 +39,7 @@ __Media-Storm (Russia, Moscow)__
 
 ***
 
-__February 2013 - July 2013__
+February 2013 - July 2013
 
 __Roscontrol (Russia, Moscow)__
 
@@ -51,7 +51,7 @@ __Roscontrol (Russia, Moscow)__
 
 ***
 
-__December 2012 - February 2013__
+December 2012 - February 2013
 
 __Dialoggy (Russia, Moscow)__
 
@@ -60,7 +60,7 @@ __Dialoggy (Russia, Moscow)__
 
 ***
 
-__December 2010 - December 2012__
+December 2010 - December 2012
 
 __DEFA Interaktiv (Russia, Moscow)__
 
@@ -70,7 +70,7 @@ __DEFA Interaktiv (Russia, Moscow)__
 
 ***
 
-__September 2007 - September 2010__
+September 2007 - September 2010
 
 __DreamArt (Azerbaijan, Baku)__
 
@@ -81,7 +81,7 @@ __DreamArt (Azerbaijan, Baku)__
 
 ## Education
 
-__April 2017 - Now__
+April 2017 - Now
 
 __RANEPA (Russia, Moscow)__
 
@@ -89,7 +89,7 @@ Program of professional retraining "IT-Manager: Project Manager, Business Analys
 
 ***
 
-__September 2005 - May 2010__
+September 2005 - May 2010
 
 __Azerbaijan State University of Economics (Azerbaijan, Baku)__
 
@@ -97,7 +97,7 @@ Bachelor degree
 
 ***
 
-__September 1994 - May 2005__
+September 1994 - May 2005
 
 __School №214 (Azerbaijan, Baku)__
 
