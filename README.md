@@ -17,9 +17,7 @@ TODO.
 
 ## Experience
 
-June 2015 - Now
-### IBM East Europe/Asia Ltd. (Russia, Moscow)
-
+### IBM East Europe/Asia Ltd. (Russia, Moscow; June 2015 - Now)
 * full cycle of Largest Russia internet-bank development
 * team - more than 100 front-end, back-end developers, architects
 * methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
@@ -28,20 +26,14 @@ June 2015 - Now
 
 ***
 
-February 2014 - February 2015
-
-__Media-Storm (Russia, Moscow)__
-
+### Media-Storm (Russia, Moscow; February 2014 - February 2015)
 * web development for real estate sector
 * role – UX architect, Front-end leading developer
 * full lifecycle of development - prototyping to maintenance
 
 ***
 
-February 2013 - July 2013
-
-__Roscontrol (Russia, Moscow)__
-
+### Roscontrol (Russia, Moscow; February 2013 - July 2013)
 * portal development
 * HTML development - integration for terminals
 * plugins development for design tasks
@@ -50,29 +42,20 @@ __Roscontrol (Russia, Moscow)__
 
 ***
 
-December 2012 - February 2013
-
-__Dialoggy (Russia, Moscow)__
-
+### Dialoggy (Russia, Moscow; December 2012 - February 2013)
 * portal update
 * development of [http://www.soomma.com](http://www.soomma.com)
 
 ***
 
-December 2010 - December 2012
-
-__DEFA Interaktiv (Russia, Moscow)__
-
+### DEFA Interaktiv (Russia, Moscow; December 2010 - December 2012)
 * HTML coding for design studio projects
 * development and maintenance of KIA-Russia
 * video materials preparations, acting
 
 ***
 
-September 2007 - September 2010
-
-__DreamArt (Azerbaijan, Baku)__
-
+### DreamArt (Azerbaijan, Baku; September 2007 - September 2010)
 * HTML coding for design studio projects
 * development and maintenance of KIA-Russia
 * video materials preparations, acting
@@ -80,26 +63,17 @@ __DreamArt (Azerbaijan, Baku)__
 
 ## Education
 
-April 2017 - Now
-
-__RANEPA (Russia, Moscow)__
-
+### RANEPA (Russia, Moscow; April 2017 - Now)
 Program of professional retraining "IT-Manager: Project Manager, Business Analyst"
 
 ***
 
-September 2005 - May 2010
-
-__Azerbaijan State University of Economics (Azerbaijan, Baku)__
-
+### Azerbaijan State University of Economics (Azerbaijan, Baku; September 2005 - May 2010)
 Bachelor degree
 
 ***
 
-September 1994 - May 2005
-
-__School №214 (Azerbaijan, Baku)__
-
+### School №214 (Azerbaijan, Baku; September 1994 - May 2005)
 Average (full) general education
 
 ## Works
