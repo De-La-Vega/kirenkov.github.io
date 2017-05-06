@@ -1,5 +1,12 @@
 # Vitaliy Kirenkov
 
+[About](#About) /
+[My skills](#My-skills) / 
+[Experience](#Experience) / 
+[Education](#Education) / 
+[Works](#Works) / 
+[Contact](#Contact)
+
 ## About
 Senior front-end developer • Team lead • UX-architect
 * I work in web-development for 9 years.
@@ -59,7 +66,6 @@ TODO.
 * HTML coding for design studio projects
 * development and maintenance of KIA-Russia
 * video materials preparations, acting
-
 
 ## Education
 
