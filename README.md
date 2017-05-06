@@ -1,11 +1,11 @@
 # Vitaliy Kirenkov
 
-[About](#About) /
-[My skills](#My-skills) / 
-[Experience](#Experience) / 
-[Education](#Education) / 
-[Works](#Works) / 
-[Contact](#Contact)
+[About](#about) /
+[My skills](#my-skills) / 
+[Experience](#experience) / 
+[Education](#education) / 
+[Works](#works) / 
+[Contact](#contact)
 
 ## About
 Senior front-end developer • Team lead • UX-architect
