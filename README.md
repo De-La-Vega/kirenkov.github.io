@@ -20,7 +20,7 @@ Senior front-end developer • Team lead • UX-architect
 [Resume (ru)](https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8)
 
 ## My skills
-<table width="100%">
+<table>
     <tbody>
         <tr>
             <td width="50%" valign="top">React.js / Reflux.js / Redux</td>
@@ -36,7 +36,7 @@ Senior front-end developer • Team lead • UX-architect
         </tr>
         <tr>
             <td width="50%" valign="top">HTML (XHTML, HTML4, HTML5)</td>
-            <td width="50%" valign="top">Modernizr</td>
+            <td width="50%" valign="top">Website optimization</td>
         </tr>
         <tr>
             <td width="50%" valign="top">CSS (2.1, CSS3, etc.)</td>
@@ -73,10 +73,6 @@ Senior front-end developer • Team lead • UX-architect
         <tr>
             <td width="50%" valign="top">SVG</td>
             <td width="50%" valign="top">Jira, Confluence, Stash</td>
-        </tr>
-        <tr>
-            <td width="50%" valign="top">Website optimization</td>
-            <td width="50%" valign="top"></td>
         </tr>
     </tbody>
 </table>
@@ -143,7 +139,44 @@ Bachelor degree
 Average (full) general education
 
 ## Works
-TODO.
+<table>
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+            <td width="50%" valign="top">
+                <a href="#" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Contact
 __Skype:__ de_la_vega666
