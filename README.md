@@ -142,34 +142,34 @@ Average (full) general education
 <table>
     <tbody>
         <tr>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
             </td>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
             </td>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
             </td>
         </tr>
         <tr>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
             </td>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
             </td>
-            <td width="50%" valign="top">
+            <td width="33%" valign="top">
                 <a href="#" target="_blank">
                     <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
                 </a>
