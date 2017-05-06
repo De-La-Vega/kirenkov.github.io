@@ -17,8 +17,8 @@ TODO.
 
 ## Experience
 
+##### June 2015 - Now
 ### IBM East Europe/Asia Ltd. (Russia, Moscow)
-#### June 2015 - Now
 
 * full cycle of Largest Russia internet-bank development
 * team - more than 100 front-end, back-end developers, architects
