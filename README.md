@@ -17,15 +17,14 @@ TODO.
 
 ## Experience
 
-> June 2015 - Now
-> 
-> __IBM East Europe/Asia Ltd. (Russia, Moscow)__
-> 
-> * full cycle of Largest Russia internet-bank development
-> * team - more than 100 front-end, back-end developers, architects
-> * methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
-> * working with kanban boards, tasks planning
-> * deep involvement into UX-concept preparation
+### IBM East Europe/Asia Ltd. (Russia, Moscow)
+#### June 2015 - Now
+
+* full cycle of Largest Russia internet-bank development
+* team - more than 100 front-end, back-end developers, architects
+* methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
+* working with kanban boards, tasks planning
+* deep involvement into UX-concept preparation
 
 ***
 
