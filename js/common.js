@@ -15,6 +15,13 @@ $(function(){
 		}
 	}
 
+	/**
+	 * Device type.
+	 */
+	function isMobile () {
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	}
+
 	// Cycle
 	if ($.fn.cycle) {
 		$('.l-testimonials').cycle({
@@ -28,20 +35,26 @@ $(function(){
 
 	// Fix header
 	_window.on('scroll', function(){
-		if (_window.scrollTop() > $('.section-header').height() - 90) {
+		if (_window.scrollTop() > $('.section-header').height() - $('.section-nav').outerHeight()) {
 			_body.addClass('body-fixed');
 		} else {
 			_body.removeClass('body-fixed');
 		}
 	}).trigger('scroll');
 
-	// scrollTo
+	function initScrollTo (className) {
+		$.scrollTo($('.' + className), 300, {
+			offset: -50
+		});
+	}
+
+	// scrollTo trigger
 	$('.scroll-to').on('click', function(e){
 		preventDefault(e);
 
-		$.scrollTo($('.' + $(this).data('link')), 300, {
-		    offset: -50
-		});
+		$('.nav-list').removeClass('active');
+
+		initScrollTo($(this).data('link'));
 	});
 
 	// Validate
@@ -84,7 +97,6 @@ $(function(){
 					},
 					dataType: 'json'
 				}).done(function(response) {
-					console.log('response', response);
 					that.parent('div').html('<div class="alert alert-success form-response">Your message was sent.</div>');
 				});
 
@@ -96,8 +108,11 @@ $(function(){
 	$('.nav-toggle').on('click', function(e){
 		preventDefault(e);
 
+		if (!_body.hasClass('body-fixed')) {
+			initScrollTo('section-about');
+		}
+
 		$('.nav-list').toggleClass('active');
 	});
-	
 
 });
