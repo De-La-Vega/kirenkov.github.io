@@ -9,12 +9,12 @@
 
 ## About
 Senior front-end developer • Team lead • UX-architect
-* I work in web-development for 9 years.
-* During this time i created 200+ web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
-* I work with technologies such as: React.js, Reflux.js, Redux, JavaScript, TypeScript, Webpack, Gulp, LESS, SASS, Bootstrap and etc.
-* Good in design programs: Photoshop, Sketch.
-* Also created plugin for Sketch - [Bootstrap grid](https://github.com/De-La-Vega/BootstrapGrid).
-* Have experience with working by Agile methodology.
+* I work in web-development for __9__ years.
+* During this time i created __200+__ web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
+* I work with technologies such as: __React.js__, __Reflux.js__, __Redux__, __JavaScript__, __TypeScript__, __Webpack__, __Gulp__, __LESS__, __SASS__, __Bootstrap__ and etc.
+* Good in design programs: __Photoshop__, __Sketch__.
+* Also created __plugin for Sketch__ - [Bootstrap grid](https://github.com/De-La-Vega/BootstrapGrid).
+* Have experience with working by __Agile__ methodology.
 
 [Resume (en)](https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M) /
 [Resume (ru)](https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8)
