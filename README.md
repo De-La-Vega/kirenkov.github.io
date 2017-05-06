@@ -17,7 +17,7 @@ TODO.
 
 ## Experience
 
-##### June 2015 - Now
+June 2015 - Now
 ### IBM East Europe/Asia Ltd. (Russia, Moscow)
 
 * full cycle of Largest Russia internet-bank development
