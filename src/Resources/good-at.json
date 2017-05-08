@@ -1,0 +1,32 @@
+[
+    {
+        "label": "React.js (Reflux.js, Redux)",
+        "pathLength": "225",
+        "percentage": "90%"
+    },
+    {
+        "label": "JavaScript (ES5, ES6, TypeScript)",
+        "pathLength": "220",
+        "percentage": "85%"
+    },
+    {
+        "label": "HTML (XHTML, HTML4, HTML5)",
+        "pathLength": "235",
+        "percentage": "95%"
+    },
+    {
+        "label": "CSS (LESS, SASS)",
+        "pathLength": "232",
+        "percentage": "94%"
+    },
+    {
+        "label": "Photoshop (Sketch)",
+        "pathLength": "225",
+        "percentage": "91%"
+    },
+    {
+        "label": "VS Code (Sublime text)",
+        "pathLength": "240",
+        "percentage": "99%"
+    }
+]

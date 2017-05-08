@@ -1,0 +1,61 @@
+[
+    {
+        "isActive": true,
+        "companyName": "RANEPA",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "Program of professional retraining \"IT-Manager: Project Manager, Business Analyst\""
+        ],
+        "period": {
+            "start": {
+                "month": "April",
+                "year": "2017"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "Azerbaijan State University of Economics",
+        "location": {
+            "country": "Azerbaijan",
+            "city": "Baku"
+        },
+        "responsibilities": [
+            "Bachelor degree"
+        ],
+        "period": {
+            "start": {
+                "month": "September",
+                "year": "2005"
+            },
+            "end": {
+                "month": "May",
+                "year": "2010"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "School №214",
+        "location": {
+            "country": "Azerbaijan",
+            "city": "Baku"
+        },
+        "responsibilities": [
+            "Average (full) general education"
+        ],
+        "period": {
+            "start": {
+                "month": "September",
+                "year": "1994"
+            },
+            "end": {
+                "month": "May",
+                "year": "2005"
+            }
+        }
+    }
+]
