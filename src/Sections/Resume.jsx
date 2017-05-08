@@ -3,7 +3,7 @@ import {map} from 'lodash';
 
 import DATA_RESUME from '../Resources/resume.json';
 
-import ChronologyItem from './ChronologyItem';
+import ChronologyItem from '../Components/ChronologyItem';
 
 export default class Resume extends React.Component {
     renderList () {

@@ -3,7 +3,7 @@ import {map} from 'lodash';
 
 import DATA_EDUCATION from '../Resources/education.json';
 
-import ChronologyItem from './ChronologyItem';
+import ChronologyItem from '../Components/ChronologyItem';
 
 export default class Education extends React.Component {
     renderList () {

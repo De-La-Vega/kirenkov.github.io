@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
-import ContactsForm from './ContactsForm';
+import ContactsForm from '../Components/ContactsForm';
 
 export default class Contacts extends React.Component {
     render () {
