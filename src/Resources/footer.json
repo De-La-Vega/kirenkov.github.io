@@ -1,0 +1,18 @@
+[
+    {
+        "iconClassName": "icon-github-circled",
+        "link": "https://github.com/De-La-Vega/"
+    },
+    {
+        "iconClassName": "icon-linkedin-circled",
+        "link": "https://ru.linkedin.com/in/vitaliykirenkov"
+    },
+    {
+        "iconClassName": "icon-facebook-circled",
+        "link": "https://www.facebook.com/kirenkov.vitaliy"
+    },
+    {
+        "iconClassName": "icon-twitter-circled",
+        "link": "https://twitter.com/VitaliyKirenkov"
+    }
+]

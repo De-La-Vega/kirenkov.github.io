@@ -1,0 +1,180 @@
+[
+    {
+        "isActive": true,
+        "companyName": "IBM East Europe/Asia Ltd.",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "full cycle of Largest Russia internet-bank development",
+            "team - more than 100 front-end, back-end developers, architects",
+            "methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master",
+            "working with kanban boards, tasks planning",
+            "deep involvement into UX-concept preparation"
+        ],
+        "period": {
+            "start": {
+                "month": "June",
+                "year": "2015"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "Media-Storm",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "web development for real estate sector",
+            "role – UX architect, Front-end leading developer",
+            "full lifecycle of development - prototyping to maintenance"
+        ],
+        "period": {
+            "start": {
+                "month": "February",
+                "year": "2014"
+            },
+            "end": {
+                "month": "February",
+                "year": "2015"
+            }
+        }
+    },
+    {
+        "isActive": false,
+        "companyName": "Biznes Molodost",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            ""
+        ],
+        "period": {
+            "start": {
+                "month": "July",
+                "year": "2013"
+            },
+            "end": {
+                "month": "September",
+                "year": "2013"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "Roscontrol",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "portal development",
+            "HTML development - integration for terminals",
+            "plugins development for design tasks",
+            "mock-up maintenance",
+            "deep involvement into UX-concept preparation"
+        ],
+        "period": {
+            "start": {
+                "month": "February",
+                "year": "2013"
+            },
+            "end": {
+                "month": "July",
+                "year": "2013"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "Dialoggy",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "portal update",
+            "development of www.soomma.com"
+        ],
+        "period": {
+            "start": {
+                "month": "December",
+                "year": "2012"
+            },
+            "end": {
+                "month": "February",
+                "year": "2013"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "DEFA Interaktiv",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "HTML coding for design studio projects",
+            "development and maintenance of KIA-Russia",
+            "video materials preparations, acting"
+        ],
+        "period": {
+            "start": {
+                "month": "December",
+                "year": "2010"
+            },
+            "end": {
+                "month": "December",
+                "year": "2012"
+            }
+        }
+    },
+    {
+        "isActive": false,
+        "companyName": "qb-interactive",
+        "location": {
+            "country": "Russia",
+            "city": "Moscow"
+        },
+        "responsibilities": [
+            "разработка веб-сайтов в сфере недвижимости (жилые комплексы, торговые центры)"
+        ],
+        "period": {
+            "start": {
+                "month": "September",
+                "year": "2010"
+            },
+            "end": {
+                "month": "November",
+                "year": "2010"
+            }
+        }
+    },
+    {
+        "isActive": true,
+        "companyName": "DreamArt",
+        "location": {
+            "country": "Azerbaijan",
+            "city": "Baku"
+        },
+        "responsibilities": [
+            "web-sites development",
+            "content management"
+        ],
+        "period": {
+            "start": {
+                "month": "September",
+                "year": "2007"
+            },
+            "end": {
+                "month": "September",
+                "year": "2010"
+            }
+        }
+    }
+]
