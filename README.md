@@ -1,97 +1,186 @@
-# react-webpack-babel
-Simple React Webpack Babel Starter Kit
+# Vitaliy Kirenkov
 
-Tired of complicated starters with 200MB of dependencies which are hard to understand and modify?
+[About](#about) /
+[My skills](#my-skills) / 
+[Experience](#experience) / 
+[Education](#education) / 
+[Works](#works) / 
+[Contact](#contact)
 
-Try this is a simple [React](https://facebook.github.io/react/), [Webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) application with nothing else in it.
+## About
+Senior front-end developer • Team lead • UX-architect
+* I work in web-development for __9__ years.
+* During this time i created __200+__ web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
+* I work with technologies such as: __React.js__, __Reflux.js__, __Redux__, __JavaScript__, __TypeScript__, __Webpack__, __Gulp__, __LESS__, __SASS__, __Bootstrap__ and etc.
+* Good in design programs: __Photoshop__, __Sketch__.
+* Also created __plugin for Sketch__ - [Bootstrap grid](https://github.com/De-La-Vega/BootstrapGrid).
+* Have experience with working by __Agile__ methodology.
 
-### What's in it?
+[Resume (en)](https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M) /
+[Resume (ru)](https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8)
 
-* Simple src/index.jsx and src/index.css (local module css).
-* Webpack configuration for development (with hot reloading) and production (with minification).
-* CSS module loading, so you can include your css by ```import styles from './path/to.css';```.
-* Both js(x) and css hot loaded during development.
-* [Webpack Dashboard Plugin](https://github.com/FormidableLabs/webpack-dashboard) on dev server.
+## My skills
+<table>
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">React.js / Reflux.js / Redux</td>
+            <td width="50%" valign="top">Development tools and utilities (Chrome, Firebug, etc)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">Typescript</td>
+            <td width="50%" valign="top">Responsive design</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">JavaScript (ES5, ES6) / Ajax, jQuery</td>
+            <td width="50%" valign="top">Cross-browser development / Cross-platform</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">HTML (XHTML, HTML4, HTML5)</td>
+            <td width="50%" valign="top">Website optimization</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">CSS (2.1, CSS3, etc.)</td>
+            <td width="50%" valign="top">Document Object Model (DOM)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">Frameworks (Bootstrap, HTML5 Boilerplate)</td>
+            <td width="50%" valign="top">CSS compilers (SASS, LESS)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">UX / UI / Usability</td>
+            <td width="50%" valign="top">Version controls (Git, Mercurial)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">OOCSS / BEM</td>
+            <td width="50%" valign="top">Object-oriented Programming (OOP)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">CSS Grids, Web Font Embedding / Licensing</td>
+            <td width="50%" valign="top">Task-runners, collectors (Webpack, Gulp)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">CSS frameworks / Resets</td>
+            <td width="50%" valign="top">Angular.js, Ember.js (medium)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">Progressive Enhancement / Graceful Degradation</td>
+            <td width="50%" valign="top">Data Formats (JSON, JSONP, XML)</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">HTML и CSS standards</td>
+            <td width="50%" valign="top">Methodologies Agile, Scrum, Kanban</td>
+        </tr>
+        <tr>
+            <td width="50%" valign="top">SVG</td>
+            <td width="50%" valign="top">Jira, Confluence, Stash</td>
+        </tr>
+    </tbody>
+</table>
 
-### To run
 
-* You'll need to have [git](https://git-scm.com/) and [node](https://nodejs.org/en/) installed in your system.
-* Fork and clone the project:
+## Experience
 
-```
-git clone https://github.com/alicoding/react-webpack-babel.git
-```
+### IBM East Europe/Asia Ltd. (Russia, Moscow) <sup>June 2015 - Now</sup>
+* full cycle of Largest Russia internet-bank development
+* team - more than 100 front-end, back-end developers, architects
+* methodology - Agile, role – leading developer, code reviewer, UX-architect, scrum master
+* working with kanban boards, tasks planning
+* deep involvement into UX-concept preparation
 
-* Then install the dependencies:
+***
 
-```
-npm install
-```
+### Media-Storm (Russia, Moscow) <sup>February 2014 - February 2015</sup>
+* web development for real estate sector
+* role – UX architect, Front-end leading developer
+* full lifecycle of development - prototyping to maintenance
 
-* Run development server:
+***
 
-```
-npm start
-```
+### Roscontrol (Russia, Moscow) <sup>February 2013 - July 2013</sup>
+* portal development
+* HTML development - integration for terminals
+* plugins development for design tasks
+* mock-up maintenance
+* deep involvement into UX-concept preparation
 
-* Or you can run development server with [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard):
+***
 
-```
-npm run dev
-```
+### Dialoggy (Russia, Moscow) <sup>December 2012 - February 2013</sup>
+* portal update
+* development of [http://www.soomma.com](http://www.soomma.com)
 
-Open the web browser to `http://localhost:8888/`
+***
 
-### To build the production package
+### DEFA Interaktiv (Russia, Moscow) <sup>December 2010 - December 2012</sup>
+* HTML coding for design studio projects
+* development and maintenance of KIA-Russia
+* video materials preparations, acting
 
-```
-npm run build
-```
+***
 
-### Nginx Config
+### DreamArt (Azerbaijan, Baku) <sup>September 2007 - September 2010</sup>
+* HTML coding for design studio projects
+* development and maintenance of KIA-Russia
+* video materials preparations, acting
 
-Here is an example Nginx config:
-```
-server {
-	# ... root and other options
+## Education
 
-	gzip on;
-	gzip_http_version 1.1;
-	gzip_types text/plain text/css text/xml application/javascript image/svg+xml;
+### RANEPA (Russia, Moscow) <sup>April 2017 - Now</sup>
+Program of professional retraining "IT-Manager: Project Manager, Business Analyst"
 
-	location / {
-		try_files $uri $uri/ /index.html;
-	}
+***
 
-	location ~ \.html?$ {
-		expires 1d;
-	}
+### Azerbaijan State University of Economics (Azerbaijan, Baku) <sup>September 2005 - May 2010</sup>
+Bachelor degree
 
-	location ~ \.(svg|ttf|js|css|svgz|eot|otf|woff|jpg|jpeg|gif|png|ico)$ {
-		access_log off;
-		log_not_found off;
-		expires max;
-	}
-}
-```
+***
 
-### Eslint
-There is a .eslint.yaml config for eslint ready with React plugin.
-To use it, you need to install additional dependencies though:
+### School №214 (Azerbaijan, Baku) <sup>September 1994 - May 2005</sup>
+Average (full) general education
 
-```
-npm install --save-dev eslint eslint-plugin-react
-```
+## Works
+<table>
+    <tbody>
+        <tr>
+            <td width="33%" valign="top">
+                <a href="http://moscow-restaurants.ru/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-moscow-restaurants.jpg" />
+                </a>
+            </td>
+            <td width="33%" valign="top">
+                <a href="http://www.exelum.com/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-exelum.jpg" />
+                </a>
+            </td>
+            <td width="33%" valign="top">
+                <a href="http://lot49.co.uk/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-lot49.jpg" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" valign="top">
+                <a href="http://www.enplus.ru/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-enplus.jpg" />
+                </a>
+            </td>
+            <td width="33%" valign="top">
+                <a href="http://xn----8sbqkagcdpm5ao4l.xn--p1ai/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-jk-marinsky.jpg" />
+                </a>
+            </td>
+            <td width="33%" valign="top">
+                <a href="https://www.perfekto.ru/" target="_blank">
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-perfekto.jpg" />
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-To do the actual linting, run:
+## Contact
+__Skype:__ de_la_vega666
 
-```
-npm run lint
-```
+__Phone:__ +7 (916) 961-71-95
 
-### Notes on importing css styles
-* styles having /src/ in their absolute path are considered part of the application and exported as local css modules.
-* other styles are considered global styles used by many components and are included in the css bundle directly.
-
-### Contribute
-Please contribute to the project if you know how to make it better, including this README :)
+__E-mail:__ <a href="mailto:kirenkov.vitaliy@gmail.com">kirenkov.vitaliy@gmail.com</a>
