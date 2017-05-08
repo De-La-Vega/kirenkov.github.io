@@ -144,34 +144,34 @@ Average (full) general education
         <tr>
             <td width="33%" valign="top">
                 <a href="http://moscow-restaurants.ru/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-moscow-restaurants.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-moscow-restaurants.jpg" />
                 </a>
             </td>
             <td width="33%" valign="top">
                 <a href="http://www.exelum.com/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-exelum.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-exelum.jpg" />
                 </a>
             </td>
             <td width="33%" valign="top">
                 <a href="http://lot49.co.uk/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-lot49.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-lot49.jpg" />
                 </a>
             </td>
         </tr>
         <tr>
             <td width="33%" valign="top">
                 <a href="http://www.enplus.ru/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-enplus.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-enplus.jpg" />
                 </a>
             </td>
             <td width="33%" valign="top">
                 <a href="http://xn----8sbqkagcdpm5ao4l.xn--p1ai/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-jk-marinsky.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-jk-marinsky.jpg" />
                 </a>
             </td>
             <td width="33%" valign="top">
                 <a href="https://www.perfekto.ru/" target="_blank">
-                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/assets/img/work-perfekto.jpg" />
+                    <img src="https://github.com/De-La-Vega/de-la-vega.github.io/blob/master/img-for-readme/work-perfekto.jpg" />
                 </a>
             </td>
         </tr>
