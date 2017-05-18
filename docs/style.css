@@ -324,6 +324,12 @@ h4 {
   left: 50%;
 }
 
+@media (max-height: 700px) {
+  .section-header .data .scroll_down {
+    display: none;
+  }
+}
+
 .section-header::before {
   content: "";
   display: block;
