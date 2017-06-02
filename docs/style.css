@@ -254,7 +254,7 @@ h4 {
 /*------------------------ HEADER ------------------------*/
 .section-header {
   height: 100%;
-  background: url(./f484b4566a5d4a0863fc8fe80cfb15f1.jpg) no-repeat 50% 50%;
+  background: url(./c572a240476fc65d1413a4eccda3ad64.jpg) no-repeat 50% 50%;
   background-size: cover;
   position: relative;
 }
@@ -295,6 +295,10 @@ h4 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
@@ -305,7 +309,7 @@ h4 {
   left: 50%;
   width: 7em;
   height: 7em;
-  background-color: fade(#19bd9b, 50%);
+  background-color: rgba(25, 189, 155, 0.5);
   border: 1px solid #19bd9b;
   margin-top: 5em;
   color: #ffffff;
@@ -322,6 +326,10 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.section-header .data .scroll_down:hover {
+  background-color: rgba(25, 189, 155, 0.7);
 }
 
 @media (max-height: 700px) {
@@ -551,7 +559,7 @@ h4 {
 /*------------------------ / ABOUT ME ------------------------*/
 /*------------------------ GOOD AT ------------------------*/
 .section-good-at {
-  background: url(./18671af9e05648e39c9f91cfb587cf52.jpg) no-repeat 50% 50%;
+  background: url(./45f8b7aaca9f37a3d6ac98f56c0f7afc.jpg) no-repeat 50% 50%;
   background-size: cover;
   position: relative;
 }
@@ -994,6 +1002,10 @@ h4 {
   left: 0;
 }
 
+.contacts-container {
+  margin-top: 5em;
+}
+
 .item-contact {
   display: table;
 }
@@ -1026,15 +1038,6 @@ h4 {
   line-height: 1.5em;
 }
 
-@media (max-width: 767px) {
-  .item-contact .icon {
-    font-size: .7em;
-  }
-  .item-contact .text {
-    padding-left: 1em;
-  }
-}
-
 .item-contact a {
   color: #ffffff;
   text-decoration: none;
@@ -1046,6 +1049,22 @@ h4 {
 
 .item-contact:not(:first-child) {
   margin-top: 2em;
+}
+
+@media (max-width: 767px) {
+  .item-contact {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 991px) {
+  .item-contact .icon {
+    font-size: .6em;
+  }
+  .item-contact .text {
+    padding-left: 1em;
+  }
 }
 
 .icon-contact {

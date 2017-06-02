@@ -14,8 +14,7 @@
     <!-- Bootstrap: Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Bootstrap: Latest compiled and minified JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="./loading.css">
 
 	<!--[if lt IE 9]>
 		<script>
@@ -27,121 +26,6 @@
 			document.createElement('aside');
 		</script>
 	<![endif]-->
-
-	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44566677 = new Ya.Metrika({ id:44566677, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44566677" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-
-	<style>
-		body {
-			background-color: #2a2b2d;
-		}
-		@-moz-keyframes rotate-loading {
-			0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
-			100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-		}
-		
-		@-o-keyframes rotate-loading {
-			0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
-			100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-		}
-		
-		@-webkit-keyframes rotate-loading {
-			0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
-			100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-		}
-		
-		@keyframes rotate-loading {
-			0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
-			100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
-		}
-		
-		@-moz-keyframes loading-text-opacity {
-			0%  {opacity: 0}
-			20% {opacity: 0}
-			50% {opacity: 1}
-			100%{opacity: 0}
-		}
-		
-		
-		@-o-keyframes loading-text-opacity {
-			0%  {opacity: 0}
-			20% {opacity: 0}
-			50% {opacity: 1}
-			100%{opacity: 0}
-		}
-		
-		@-webkit-keyframes loading-text-opacity {
-			0%  {opacity: 0}
-			20% {opacity: 0}
-			50% {opacity: 1}
-			100%{opacity: 0}
-		}
-		
-		@keyframes loading-text-opacity {
-			0%  {opacity: 0}
-			20% {opacity: 0}
-			50% {opacity: 1}
-			100%{opacity: 0}
-		}
-		
-		.loading-container,
-		.loading {
-			height: 100px;
-			position: relative;
-			width: 100px;
-			border-radius: 100%;
-		}
-		
-		.loading-container {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			margin: -50px 0 0 -50px;
-		}
-		
-		.loading {
-			border: 2px solid transparent;
-			border-color: transparent #ffffff transparent #ffffff;
-			-moz-animation: rotate-loading 1.5s linear 0s infinite normal;
-			-moz-transform-origin: 50% 50%;
-			-o-animation: rotate-loading 1.5s linear 0s infinite normal;
-			-o-transform-origin: 50% 50%;
-			-webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
-			-webkit-transform-origin: 50% 50%;
-			animation: rotate-loading 1.5s linear 0s infinite normal;
-			transform-origin: 50% 50%;
-		}
-		
-		.loading-container:hover .loading {
-			border-color: transparent #E45635 transparent #E45635;
-		}
-		
-		.loading-container:hover .loading,
-		.loading-container .loading {
-			-webkit-transition: all 0.5s ease-in-out;
-			-moz-transition: all 0.5s ease-in-out;
-			-ms-transition: all 0.5s ease-in-out;
-			-o-transition: all 0.5s ease-in-out;
-			transition: all 0.5s ease-in-out;
-		}
-		
-		#loading-text {
-			-moz-animation: loading-text-opacity 2s linear 0s infinite normal;
-			-o-animation: loading-text-opacity 2s linear 0s infinite normal;
-			-webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
-			animation: loading-text-opacity 2s linear 0s infinite normal;
-			color: #ffffff;
-			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-			font-size: 10px;
-			font-weight: bold;
-			margin-top: 45px;
-			opacity: 0;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			top: 0;
-			width: 100px;
-		}
-	</style>
 <link href="./style.css" rel="stylesheet"></head>
 
 <body>
@@ -151,5 +35,7 @@
 			<div id="loading-text">loading</div>
 		</div>
 	</div>
-<script type="text/javascript" src="./c320640971c939c070b2.js"></script></body>
+
+	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44566677 = new Ya.Metrika({ id:44566677, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44566677" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script type="text/javascript" src="./52617a3a25df7fd25ee9.js"></script></body>
 </html>
