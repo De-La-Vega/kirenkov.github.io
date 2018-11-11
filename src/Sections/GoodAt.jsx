@@ -1,5 +1,5 @@
 import React from 'react';
-import {map} from 'lodash';
+import { map } from 'lodash';
 
 import DATA_GOOD_AT from '../Resources/good-at.json';
 
@@ -7,7 +7,7 @@ export default class GoodAt extends React.Component {
     renderGoodAtList () {
         let list = map(DATA_GOOD_AT, (item, index) => {
             return (
-                <li key={index}>
+                <li key={index} className="l-good-at-item">
                     <div className="chart">
                         <div className="item-chart">
                             <div className="svg-wrapper">
@@ -31,7 +31,7 @@ export default class GoodAt extends React.Component {
                                     />
                                 </svg>
                             </div>
-                            <span>{item.percentage}</span>
+                            <span className="item-chart__text">{item.percentage}</span>
                         </div>
                     </div>
                     <div className="title text-uppercase">
@@ -49,7 +49,7 @@ export default class GoodAt extends React.Component {
     }
 
     render () {
-        return (
+        return true ? null : (
             <div className="g-outer section-good-at section-indent">
                 <div className="container g-inner text-center">
                     <h2 className="inverted">i am <span>good at</span></h2>

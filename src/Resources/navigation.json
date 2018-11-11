@@ -12,7 +12,7 @@
     {
         "label": "My skills",
         "link": "section-good-at",
-        "isVisible": true
+        "isVisible": false
     },
     {
         "label": "Experience",
@@ -27,7 +27,7 @@
     {
         "label": "Works",
         "link": "section-works",
-        "isVisible": true
+        "isVisible": false
     },
     {
         "label": "Testimonials",

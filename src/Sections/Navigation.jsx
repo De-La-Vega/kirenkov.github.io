@@ -1,6 +1,6 @@
 import React from 'react';
-import {map} from 'lodash';
-import {preventDefault, scrollTo, outerHeight} from '../Utils';
+import { map } from 'lodash';
+import { preventDefault, scrollTo } from '../Utils';
 
 import DATA_NAVIGATION from '../Resources/navigation.json';
 
@@ -80,15 +80,15 @@ export default class Navigation extends React.Component {
             <div className="g-outer section-nav">
                 <div className="container g-inner">
                     <div className="row">
-                        <div className="col-xs-9 col-md-4 name">Vitaliy <span>Kirenkov</span></div>
+                        <div className="col-xs-9 col-md-4 section-nav__name">Vitaliy <span className="section-nav__name-secondary">Kirenkov</span></div>
                         <div className="col-xs-3 col-md-8 navigation text-right">
                             <button
                                 className="nav-toggle"
                                 onClick={this.toggleAdaptiveNav}
                             >
-                                <i></i>
-                                <i></i>
-                                <i></i>
+                                <i className="nav-toggle-stripe"></i>
+                                <i className="nav-toggle-stripe"></i>
+                                <i className="nav-toggle-stripe"></i>
                             </button>
                             {this.renderMenu()}
                         </div>

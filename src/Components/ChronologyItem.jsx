@@ -1,5 +1,5 @@
 import React from 'react';
-import {map} from 'lodash';
+import { map } from 'lodash';
 
 export default function ChronologyItem (props) {
     const {item} = props;

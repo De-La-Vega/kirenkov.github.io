@@ -6,7 +6,6 @@ export default class About extends React.Component {
             <div className="g-outer section-about section-indent">
                 <div className="container g-inner">
                     <h2 className="text-center">About <span>me</span></h2>
-                    <h3 className="text-center lead-text">Senior Front-end developer &bull; Team lead &bull; UX-architect</h3>
 
                     <div className="row">
                         <div className="col-xs-12 col-sm-4 col-sm-offset-1 img">
@@ -15,19 +14,19 @@ export default class About extends React.Component {
                         <div className="col-xs-12 col-sm-7 data">
                             <div className="data base-text">
                                 <p>
-                                    I work in web-development for <strong>9</strong> years.
+                                    I work in web-development for <strong>11</strong> years.
                                 </p>
                                 <p>
                                     During this time i created <strong>200+</strong> web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
                                 </p>
                                 <p>
-                                    I work with technologies such as: <strong>React.js</strong>, <strong>Reflux.js</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>Gulp</strong>, <strong>LESS</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
+                                    I work with technologies such as: <strong>React.js</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>Gulp</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
                                 </p>
                                 <p>
-                                    Good in design programs: <strong>Photoshop</strong>, <strong>Sketch</strong>.
+                                    Good in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>.
                                 </p>
                                 <p>
-                                    Also created <strong>plugin for Sketch</strong> - <a target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
+                                    Also created <strong>plugin for Sketch</strong> - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
                                 </p>
                                 <p>
                                     Have experience with working by <strong>Agile</strong> methodology.

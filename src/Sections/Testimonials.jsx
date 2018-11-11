@@ -8,24 +8,36 @@ export default class Testimonials extends React.Component {
                     <h2>Testimonials</h2>
                     <h3>Kind words from clients</h3>
 
-                    <ul className="l-testimonials" data-cycle-pager-template="<li></li>" data-cycle-pager=".l-testimonials-pager">
-                        <li>
-                            <div className="img"><span><img src="img/ava-testimonial.jpg" height="150" width="150" alt="" /></span></div>
-                            <div className="text base-text">testimonial text</div>
-                            <div className="name text-uppercase">testimonial author name</div>
-                            <div className="post text-uppercase base-text">testimonial author post</div>
+                    <ul className="l-testimonials" data-cycle-pager-template="<li className='l-testimonials-pager-item'></li>" data-cycle-pager=".l-testimonials-pager">
+                        <li className="l-testimonials-item">
+                            <div className="l-testimonials-item__img">
+                                <span className="l-testimonials-item__img-wrapper">
+                                    <img className="l-testimonials-item__img-wrapper-image" src="img/ava-testimonial.jpg" height="150" width="150" alt="" />
+                                </span>
+                            </div>
+                            <div className="l-testimonials-item__text base-text">testimonial text</div>
+                            <div className="l-testimonials-item__name text-uppercase">testimonial author name</div>
+                            <div className="l-testimonials-item__post text-uppercase base-text">testimonial author post</div>
                         </li>
-                        <li>
-                            <div className="img"><span><img src="img/ava-testimonial.jpg" height="150" width="150" alt="" /></span></div>
-                            <div className="text base-text">testimonial text</div>
-                            <div className="name text-uppercase">testimonial author name</div>
-                            <div className="post text-uppercase base-text">testimonial author post</div>
+                        <li className="l-testimonials-item">
+                            <div className="l-testimonials-item__img">
+                                <span className="l-testimonials-item__img-wrapper">
+                                    <img className="l-testimonials-item__img-wrapper-image" src="img/ava-testimonial.jpg" height="150" width="150" alt="" />
+                                </span>
+                            </div>
+                            <div className="l-testimonials-item__text base-text">testimonial text</div>
+                            <div className="l-testimonials-item__name text-uppercase">testimonial author name</div>
+                            <div className="l-testimonials-item__post text-uppercase base-text">testimonial author post</div>
                         </li>
-                        <li>
-                            <div className="img"><span><img src="img/ava-testimonial.jpg" height="150" width="150" alt="" /></span></div>
-                            <div className="text base-text">testimonial text</div>
-                            <div className="name text-uppercase">testimonial author name</div>
-                            <div className="post text-uppercase base-text">testimonial author post</div>
+                        <li className="l-testimonials-item">
+                            <div className="l-testimonials-item__img">
+                                <span className="l-testimonials-item__img-wrapper">
+                                    <img className="l-testimonials-item__img-wrapper-image" src="img/ava-testimonial.jpg" height="150" width="150" alt="" />
+                                </span>
+                            </div>
+                            <div className="l-testimonials-item__text base-text">testimonial text</div>
+                            <div className="l-testimonials-item__name text-uppercase">testimonial author name</div>
+                            <div className="l-testimonials-item__post text-uppercase base-text">testimonial author post</div>
                         </li>
                     </ul>
 

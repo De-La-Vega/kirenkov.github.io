@@ -1,5 +1,5 @@
 import React from 'react';
-import {map} from 'lodash';
+import { map } from 'lodash';
 
 import DATA_EDUCATION from '../Resources/education.json';
 
@@ -24,8 +24,7 @@ export default class Education extends React.Component {
         return (
             <div className="g-outer section-education section-indent">
                 <div className="container g-inner">
-                    <h2 className="text-center"><span>Education</span></h2>
-                    <h3 className="text-center">My education</h3>
+                    <h2 className="text-center">My <span>education</span></h2>
 
                     {this.renderList()}
                 </div>

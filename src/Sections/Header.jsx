@@ -18,7 +18,7 @@ export default class Header extends React.Component {
             <div className="g-outer section-header">
                 <div className="data">
                     <div className="name">Vitaliy <span>Kirenkov</span></div>
-                    <div className="post">Front-end developer</div>
+                    <div className="post">Lead Front-end developer &bull; Tech lead &bull; UX-architect</div>
                     <div
                         className="scroll_down"
                         onClick={() => scrollTo('section-about')}

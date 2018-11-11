@@ -13,9 +13,9 @@ import Contacts from '../src/Sections/Contacts';
 import Footer from '../src/Sections/Footer';
 
 export default class App extends React.Component {
-    render() {
+    render () {
         return (
-            <div>
+            <div className="app-wrapper">
                 <Header />
                 <Navigation />
                 <About />

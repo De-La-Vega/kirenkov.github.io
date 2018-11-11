@@ -1,5 +1,5 @@
 import React from 'react';
-import {map} from 'lodash';
+import { map } from 'lodash';
 
 import DATA_WORK from '../Resources/work.json';
 
@@ -25,6 +25,7 @@ export default class Works extends React.Component {
                         return (
                             <div className="l-works-col" key={key}>
                                 <a
+                                    className="l-works-col-link"
                                     href={col.linkHref}
                                     style={{backgroundImage: 'url(' + IMAGES[index][key] + ')'}}
                                     target="_blank"
@@ -49,7 +50,7 @@ export default class Works extends React.Component {
     }
 
     render () {
-        return (
+        return true ? null : (
             <div className="g-outer section-works section-indent">
                 <div className="container g-inner text-center">
                     <h2>Browse my <span>recent works</span></h2>
