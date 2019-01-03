@@ -7,7 +7,7 @@ export const About: React.SFC = () => (
 
             <div className="row">
                 <div className="col-xs-12 col-sm-4 col-sm-offset-1 img">
-                    <img src="../assets/images/photo-about.jpg" className="img-responsive" alt="" />
+                    <img src="assets/images/photo-about.jpg" className="img-responsive" alt="" />
                 </div>
                 <div className="col-xs-12 col-sm-7 data">
                     <div className="data base-text">
