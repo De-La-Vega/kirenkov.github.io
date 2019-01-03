@@ -10,11 +10,6 @@
         "isVisible": true
     },
     {
-        "label": "My skills",
-        "link": "section-good-at",
-        "isVisible": false
-    },
-    {
         "label": "Experience",
         "link": "section-resume",
         "isVisible": true
@@ -23,16 +18,6 @@
         "label": "Education",
         "link": "section-education",
         "isVisible": true
-    },
-    {
-        "label": "Works",
-        "link": "section-works",
-        "isVisible": false
-    },
-    {
-        "label": "Testimonials",
-        "link": "section-testimonials",
-        "isVisible": false
     },
     {
         "label": "Contact",

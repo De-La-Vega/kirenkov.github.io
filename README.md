@@ -6,7 +6,7 @@
 [Contact](#contact)
 
 ## About
-Lead front-end developer • Tech lead • UX-architect
+Lead front-end developer • UX-architect
 * I work in web-development for __11__ years.
 * During this time i created __200+__ web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
 * I work with technologies such as: __React.js__, __Redux__, __JavaScript__, __TypeScript__, __Webpack__, __Gulp__, __LESS__, __SASS__, __Bootstrap__ and etc.
@@ -79,7 +79,5 @@ Average (full) general education
 
 ## Contact
 __Skype:__ de_la_vega666
-
-__Phone:__ +7 (916) 961-71-95
 
 __E-mail:__ <a href="mailto:kirenkov.vitaliy@gmail.com">kirenkov.vitaliy@gmail.com</a>

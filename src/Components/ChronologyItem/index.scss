@@ -1,0 +1,105 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.chronology-item {
+    padding: 4em 0;
+    border-bottom: 1px solid $color-divider;
+
+    .col-left {
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        td.divider {
+            padding: 0 .3em;
+        }
+
+        hr {
+            width: 50%;
+            margin-left: 50%;
+        }
+
+        .date {
+            @include clearfix;
+
+            .table-date {
+                float: right;
+            }
+
+            .months {
+                @include fsi(14, 21);
+            }
+
+            .years {
+                @include fsi(36, 36);
+
+                font-weight: bold;
+            }
+        }
+
+        .name {
+            @include fsi(16, 24);
+
+            margin-bottom: .3em;
+        }
+
+        .description {
+            @include fsi(12, 18);
+        }
+    }
+
+    .col-right {
+        .data {
+            padding-top: 3em;
+            padding-bottom: 3em;
+            padding-left: 2.4em;
+            border-left: 1px solid $color-divider;
+
+            .title {
+                @include fsi(18, 27);
+
+                margin-bottom: .5em;
+            }
+
+            .text {
+                ul {
+                    padding: 0 0 0 1.5em;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        .col-left {
+            padding-top: 1em;
+            padding-bottom: 1em;
+
+            .date {
+                .table-date {
+                    float: left;
+                }
+            }
+        }
+
+        .col-right {
+            .data {
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 0;
+                border-left: none;
+            }
+        }
+    }
+}
