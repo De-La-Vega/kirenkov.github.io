@@ -1,17 +1,12 @@
 [
     {
-        "label": "Home",
-        "link": "section-header",
-        "isVisible": true
-    },
-    {
         "label": "About",
         "link": "section-about",
         "isVisible": true
     },
     {
-        "label": "Experience",
-        "link": "section-resume",
+        "label": "Work",
+        "link": "section-work",
         "isVisible": true
     },
     {

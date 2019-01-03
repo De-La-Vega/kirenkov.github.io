@@ -1,6 +1,8 @@
 import * as React from 'react';
 // import { scrollTo } from '../Utils';
 
+import './index.scss';
+
 export class Header extends React.Component<{}, {}> {
     public render (): JSX.Element {
         return (

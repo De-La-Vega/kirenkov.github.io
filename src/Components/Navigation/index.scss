@@ -1,0 +1,149 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.section-nav {
+    @include shadow(0 0 10px rgba(0, 0, 0, .5));
+
+    position: relative;
+    z-index: 20;
+    height: 9em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-top: -9em;
+    background-color: $color-gray;
+
+    &__logo {
+        @include fsi(30, 30);
+        @include transition(.2s);
+
+        font-weight: 600;
+        color: $color-white;
+        text-shadow: 3px -3px 9px rgba(0, 0, 0, .5);
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: 0;
+
+        &-secondary { color: $color-green; }
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            @include fsi(22, 24);
+        }
+    }
+
+    .body-fixed & {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 0;
+
+        &__logo { opacity: 1; }
+    }
+
+    .navigation {
+        position: static;
+
+        ul {
+            @include clearfix;
+            @include list-null;
+
+            li {
+                display: inline-block;
+
+                a {
+                    @include fsi(14, 30);
+                    @include transition(.2s);
+
+                    color: $color-white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover { color: $color-green; }
+                }
+
+                @media (min-width: $screen-md) {
+                    &:not(:first-child) {
+                        position: relative;
+                        margin-left: 22px;
+
+                        &::before {
+                            @include rc(50%);
+                            @include transform(translate(0, -50%));
+
+                            position: absolute;
+                            top: 50%;
+                            left: -13px;
+                            display: block;
+                            width: 4px;
+                            height: 4px;
+                            content: '';
+                            background-color: $color-white;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: $screen-sm-max) {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                display: none;
+                background-color: $color-gray;
+                border-top: 1px solid rgba(255, 255, 255, .5);
+
+                li {
+                    display: block;
+                    text-align: center;
+
+                    a {
+                        display: block;
+                        padding-top: .5em;
+                        padding-bottom: .5em;
+                    }
+
+                    &:not(:first-child) { border-top: 1px solid rgba(255, 255, 255, .2); }
+                }
+
+                &.active { display: block; }
+            }
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        height: 5em;
+        padding-top: 1.2em;
+        padding-bottom: 1em;
+        margin-top: -5em;
+    }
+}
+
+.nav-toggle {
+    display: none;
+    padding: 6px;
+    margin: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    &-stripe {
+        @include rc(1px);
+
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: $color-white;
+
+        & + & { margin-top: 4px; }
+    }
+
+    @media (max-width: $screen-sm-max) { display: inline-block; }
+}

@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.section-about {
+    &__img {
+        img { margin: 0 auto; }
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 2em;
+        }
+    }
+}

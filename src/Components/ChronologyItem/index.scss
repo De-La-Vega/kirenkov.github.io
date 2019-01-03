@@ -21,10 +21,6 @@
         .date {
             @include clearfix;
 
-            .table-date {
-                float: right;
-            }
-
             .months {
                 @include fsi(14, 21);
             }

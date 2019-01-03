@@ -1,11 +1,11 @@
 import * as React from 'react';
 
+import { Navigation } from '../src/Components/Navigation';
 import { About } from '../src/Sections/About';
 import { Contacts } from '../src/Sections/Contacts';
 import { Education } from '../src/Sections/Education';
 import { Header } from '../src/Sections/Header';
-import { Navigation } from '../src/Sections/Navigation';
-import { Resume } from '../src/Sections/Resume';
+import { Work } from '../src/Sections/Work';
 
 import 'styles/index.scss';
 
@@ -14,7 +14,7 @@ export const App: React.SFC = () => (
         <Header />
         <Navigation />
         <About />
-        <Resume />
+        <Work />
         <Education />
         <Contacts />
     </div>

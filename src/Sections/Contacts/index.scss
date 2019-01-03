@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.section-contacts {
+    &__links {
+        &-item {
+            display: inline-block;
+            padding-right: 1em;
+            padding-left: 1em;
+
+            &--email {
+                padding-right: 2em;
+                margin-right: 1em;
+                border-right: 1px solid $color-divider;
+            }
+        }
+    }
+
+    &__link {
+        @include fsi(40, 40);
+        @include transition(.2s);
+    }
+}

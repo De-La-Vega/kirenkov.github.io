@@ -17,12 +17,6 @@ export interface IItem {
     };
 }
 
-export interface IGoodAt {
-    label: string;
-    pathLength: string;
-    percentage: string;
-}
-
 export interface IMenuItem {
     label: string;
     link: string;

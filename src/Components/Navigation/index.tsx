@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-import { IMenuItem } from '../models';
-import { scrollTo } from '../Utils';
+import { IMenuItem } from '../../models';
+import { scrollTo } from '../../Utils';
 
-import navigationJson from '../Resources/navigation.json';
+import navigationJson from '../../Resources/navigation.json';
+
+import './index.scss';
 
 export class Navigation extends React.Component<{}, {}> {
     public componentDidMount (): void {
@@ -55,7 +57,11 @@ export class Navigation extends React.Component<{}, {}> {
             <div className="g-outer section-nav">
                 <div className="container g-inner">
                     <div className="row">
-                        <div className="col-xs-9 col-md-4 section-nav__name">Vitaliy <span className="section-nav__name-secondary">Kirenkov</span></div>
+                        <div className="col-xs-9 col-md-4">
+                            <a href="#" className="section-nav__logo" onClick={(e) => this.handleClickScrollTo(e, 'section-header')}>
+                                Vitaliy <span className="section-nav__logo-secondary">Kirenkov</span>
+                            </a>
+                        </div>
                         <div className="col-xs-3 col-md-8 navigation text-right">
                             <button
                                 className="nav-toggle"
