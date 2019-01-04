@@ -19,5 +19,14 @@
     &__link {
         @include fsi(40, 40);
         @include transition(.2s);
+
+        &-icon {
+            display: inline-block;
+            width: .875em;
+            height: 1em;
+            overflow: visible;
+            font-size: inherit;
+            vertical-align: -.125em;
+        }
     }
 }
