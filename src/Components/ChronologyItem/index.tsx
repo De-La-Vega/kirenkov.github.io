@@ -43,8 +43,28 @@ export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
                                 <div className="text base-text">
                                     <ul>
                                         {
-                                            responsibilities.map((responsibility, responsibilityIndex) => (
-                                                <li key={responsibilityIndex}>{responsibility}</li>
+                                            responsibilities.map((responsibility, index) => typeof responsibility === 'string' ? (
+                                                <li key={responsibility} className="responsibility--string">
+                                                    {responsibility}
+                                                </li>
+                                            ) : (
+                                                <li key={responsibility.program || index} className="responsibility--object">
+                                                    <div>
+                                                        <div>
+                                                            <strong>{responsibility.company}</strong>
+                                                        </div>
+                                                        {
+                                                            responsibility.program && (
+                                                                <div>{responsibility.program}: <u>{responsibility.position}</u></div>
+                                                            )
+                                                        }
+                                                        <ul>
+                                                            {responsibility.data.map((nestedResponsibility) => (
+                                                                <li key={nestedResponsibility}>{nestedResponsibility}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                </li>
                                             ))
                                         }
                                     </ul>

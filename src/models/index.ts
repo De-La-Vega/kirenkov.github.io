@@ -3,6 +3,13 @@ export interface IDate {
     year: string;
 }
 
+export interface INestedResponsibility {
+    company: string;
+    program: string;
+    position: string;
+    data: string[];
+}
+
 export interface IItem {
     isActive: boolean;
     companyName: string;
@@ -10,7 +17,7 @@ export interface IItem {
         country: string;
         city: string;
     };
-    responsibilities: string[];
+    responsibilities: Array<string | INestedResponsibility>;
     period: {
         start: IDate;
         end: IDate;

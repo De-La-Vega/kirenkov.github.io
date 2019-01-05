@@ -99,3 +99,13 @@
         }
     }
 }
+
+.responsibility--string {}
+
+.responsibility--object {
+    position: relative;
+    margin-left: -1.5em;
+    list-style-type: none;
+
+    &:not(:first-child) { margin-top: 1em; }
+}

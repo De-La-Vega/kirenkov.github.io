@@ -14,13 +14,13 @@ export const About: React.SFC = () => (
                 <div className="col-xs-12 col-sm-6">
                     <div className="base-text">
                         <p>
-                            I work in web-development for <strong>11</strong> years.
+                            I work in web-development for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
                         </p>
                         <p>
-                            During this time i created <strong>200+</strong> web-sites (personal, landing pages, online-stores, sites for plants and automotive companies).
+                            During this time i created <strong>200+</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
                         </p>
                         <p>
-                            I work with technologies such as: <strong>React.js</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
+                            Technologies i'm using: <strong>React.js</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
                         </p>
                         <p>
                             Good in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>.
@@ -29,7 +29,7 @@ export const About: React.SFC = () => (
                             Also created <strong>plugin for Sketch</strong> - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
                         </p>
                         <p>
-                            Have experience with working by <strong>Agile</strong> methodology.
+                            Certified <strong>Scrum Master</strong>.
                         </p>
                     </div>
                     <div>
