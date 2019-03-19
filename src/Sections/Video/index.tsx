@@ -2,22 +2,10 @@ import arraySort from 'array-sort';
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import YouTube, { Options } from 'react-youtube';
 
 import { ROUTES } from '../../consts';
 
 import './index.scss';
-
-/**
- * YT Player options.
- */
-const opts: Options = {
-    height: '480',
-    playerVars: {
-        origin: 'http://kirenkov.me/'
-    },
-    width: '854',
-};
 
 /**
  * YT response type.
@@ -76,17 +64,16 @@ export class Video extends React.Component<{}, IState> {
             });
     }
 
-    public renderVideoItem = (item: IYouTubeItem) => (
-        <div className="section-video__item" key={item.id.videoId}>
-            <div className="section-video__item-title">{item.snippet.title}</div>
-            <div className="section-video__item-video">
-                <YouTube
-                    videoId={item.id.videoId}
-                    opts={opts}
-                />
+    public renderVideoItem = (item: IYouTubeItem) => {
+        const iFrame = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`;
+
+        return (
+            <div className="section-video__item" key={item.id.videoId}>
+                <div className="section-video__item-title">{item.snippet.title}</div>
+                <div className="section-video__item-video" dangerouslySetInnerHTML={{ __html: iFrame }} />
             </div>
-        </div>
-    )
+        );
+    }
 
     public render (): JSX.Element {
         const { items = [] } = this.state;

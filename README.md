@@ -134,9 +134,9 @@ Average (full) general education
 ## Contact
 __E-mail:__ <a href="mailto:kirenkov.vitaliy@gmail.com">kirenkov.vitaliy@gmail.com</a>
 
-__Facebook:__ <a href="https://www.facebook.com/kirenkov.vitaliy">https://www.facebook.com/kirenkov.vitaliy</a>
+__Facebook:__ <a href="https://www.facebook.com/vitaliy.kirenkov">https://www.facebook.com/vitaliy.kirenkov</a>
 
-__LinkedIn:__ <a href="https://ru.linkedin.com/in/vitaliykirenkov">https://ru.linkedin.com/in/vitaliykirenkov</a>
+__LinkedIn:__ <a href="https://ru.linkedin.com/in/kirenkov">https://ru.linkedin.com/in/kirenkov</a>
 
 __GitHub:__ <a href="https://github.com/De-La-Vega">https://github.com/De-La-Vega</a>
 

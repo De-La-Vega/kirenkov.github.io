@@ -8,23 +8,29 @@ import navigationJson from '../../Resources/navigation.json';
 import './index.scss';
 
 export class Navigation extends React.Component<{}, {}> {
+    public componentWillUnmount (): void {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
     public componentDidMount (): void {
-        window.onscroll = () => {
-            const body = document.getElementsByTagName('body')[0];
-            const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener('scroll', this.handleScroll);
+    }
 
-            const header: any = document.getElementsByClassName('section-header')[0];
-            const headerHeight = header.offsetHeight;
+    public handleScroll = (): void => {
+        const body = document.getElementsByTagName('body')[0];
+        const scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-            const nav: any = document.getElementsByClassName('section-nav')[0];
-            const navHeight = nav.offsetHeight;
+        const header: any = document.getElementsByClassName('section-header')[0];
+        const headerHeight = header.offsetHeight;
 
-            if (scrolled > headerHeight - navHeight) {
-                body.classList.add('body-fixed');
-            } else {
-                body.classList.remove('body-fixed');
-            }
-        };
+        const nav: any = document.getElementsByClassName('section-nav')[0];
+        const navHeight = nav.offsetHeight;
+
+        if (scrolled > headerHeight - navHeight) {
+            body.classList.add('body-fixed');
+        } else {
+            body.classList.remove('body-fixed');
+        }
     }
 
     /**
