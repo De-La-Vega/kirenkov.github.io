@@ -9,7 +9,7 @@ import { Work } from '../src/Sections/Work';
 
 import 'styles/index.scss';
 
-export const App: React.SFC = () => (
+export const Main: React.SFC = () => (
     <div>
         <Header />
         <Navigation />

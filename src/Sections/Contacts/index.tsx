@@ -29,7 +29,7 @@ export const Contacts: React.SFC = () => (
                 </div>
                 <div className="section-contacts__links-item">
                     <a
-                        href="https://www.facebook.com/kirenkov.vitaliy"
+                        href="https://www.facebook.com/vitaliy.kirenkov"
                         target="_blank"
                         className="base-link section-contacts__link"
                     >
@@ -49,7 +49,7 @@ export const Contacts: React.SFC = () => (
                 </div>
                 <div className="section-contacts__links-item">
                     <a
-                        href="https://ru.linkedin.com/in/vitaliykirenkov"
+                        href="https://ru.linkedin.com/in/kirenkov"
                         target="_blank"
                         className="base-link section-contacts__link"
                     >

@@ -19,6 +19,7 @@
         "function-name": false,
         "array-type": false,
         "ban-types": false,
+        "import-name": false,
         "ter-indent": [
             true,
             4,
