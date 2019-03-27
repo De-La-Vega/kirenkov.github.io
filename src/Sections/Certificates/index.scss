@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.section-certificates {}
+
+.item-certificate {
+    margin-bottom: 20px;
+
+    &__udemy {}
+
+    &__scrum {
+        padding: 20px;
+        border: 1px solid $color-divider;
+    }
+}

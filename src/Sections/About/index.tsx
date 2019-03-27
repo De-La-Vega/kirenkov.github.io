@@ -28,9 +28,6 @@ export const About: React.SFC = () => (
                         <p>
                             Also created <strong>plugin for Sketch</strong> - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
                         </p>
-                        <p>
-                            <strong>Advanced Certified Scrum Master</strong>.
-                        </p>
                     </div>
                     <div>
                         <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="btn-base" target="_blank">

@@ -5,6 +5,11 @@
         "isVisible": true
     },
     {
+        "label": "Certificates",
+        "link": "section-certificates",
+        "isVisible": true
+    },
+    {
         "label": "Work",
         "link": "section-work",
         "isVisible": true
