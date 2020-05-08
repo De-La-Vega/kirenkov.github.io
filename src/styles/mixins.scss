@@ -1,46 +1,4 @@
-@mixin rc ($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
-}
-
-@mixin shadow ($shadow) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
-}
-
-@mixin transform ($transform) {
-    -webkit-transform: $transform;
-    -moz-transform: $transform;
-    -o-transform: $transform;
-    transform: $transform;
-}
-
-@mixin transition ($transition) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    transition: $transition;
-}
-
 @mixin fsi ($fontSize, $lineHeight, $context: 10) {
     font-size: #{$fontSize/$context}em;
     line-height: #{$lineHeight/$fontSize}em;
-}
-
-@mixin list-null {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-@mixin clearfix {
-    &::before,
-    &::after {
-        display: table;
-        content: ' ';
-    }
-
-    &::after { clear: both; }
 }

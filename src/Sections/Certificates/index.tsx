@@ -13,12 +13,12 @@ export const Certificates: React.FC = () => (
                     <Row>
                         <Col xs={6}>
                             <div className="item-certificate item-certificate__scrum">
-                                <img src="assets/images/certificates/csm.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/csm.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={6}>
                             <div className="item-certificate item-certificate__scrum">
-                                <img src="assets/images/certificates/acsm.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/acsm.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                     </Row>
@@ -26,17 +26,17 @@ export const Certificates: React.FC = () => (
                     <Row>
                         <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-4.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-4.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-2.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-2.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-7.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-7.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                     </Row>
@@ -44,22 +44,22 @@ export const Certificates: React.FC = () => (
                     <Row>
                         <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-1.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-1.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-5.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-5.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-6.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-6.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                         <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
-                                <img src="assets/images/certificates/udemy-3.jpg" className="img-responsive" alt="" />
+                                <img src="assets/images/certificates/udemy-3.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                     </Row>

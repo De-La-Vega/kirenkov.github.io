@@ -22,7 +22,8 @@
 
     &__link {
         @include fsi(40, 40);
-        @include transition(.2s);
+
+        transition: $transition-duration;
 
         &-icon {
             display: inline-block;

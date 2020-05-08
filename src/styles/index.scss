@@ -122,9 +122,8 @@ h2 {
 }
 
 .base-link {
-    @include transition(.2s);
-
     color: $color-gray;
+    transition: $transition-duration;
 
     &:hover,
     &:focus { color: $color-green; }
@@ -132,7 +131,6 @@ h2 {
 
 .btn-base {
     @include fsi(14, 20);
-    @include transition(.2s);
 
     display: inline-block;
     padding: 1em 1.4285em;
@@ -141,6 +139,7 @@ h2 {
     cursor: pointer;
     background-color: $color-green;
     border: none;
+    transition: $transition-duration;
 
     &:hover {
         color: $color-white;
