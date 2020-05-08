@@ -1,69 +1,70 @@
 import * as React from 'react';
+import { Col, Container, Row } from 'react-grid-system';
 
 import './index.scss';
 
-export const Certificates: React.SFC = () => (
-    <div className="g-outer section-certificates section-indent">
-        <div className="container g-inner">
+export const Certificates: React.FC = () => (
+    <section className="g-outer section-certificates section-indent">
+        <Container className="g-inner">
             <h2 className="text-center">My <span>Certificates</span></h2>
 
-            <div className="row">
-                <div className="col-xs-12 col-sm-10 col-sm-offset-1">
-                    <div className="row">
-                        <div className="col-xs-6">
+            <Row>
+                <Col xs={12} sm={10} offset={{ sm: 1 }} >
+                    <Row>
+                        <Col xs={6}>
                             <div className="item-certificate item-certificate__scrum">
                                 <img src="assets/images/certificates/csm.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-6">
+                        </Col>
+                        <Col xs={6}>
                             <div className="item-certificate item-certificate__scrum">
                                 <img src="assets/images/certificates/acsm.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
 
-                    <div className="row">
-                        <div className="col-xs-4">
+                    <Row>
+                        <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-4.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-4">
+                        </Col>
+                        <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-2.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-4">
+                        </Col>
+                        <Col xs={4}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-7.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
 
-                    <div className="row">
-                        <div className="col-xs-6 col-lg-3">
+                    <Row>
+                        <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-1.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-6 col-lg-3">
+                        </Col>
+                        <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-5.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-6 col-lg-3">
+                        </Col>
+                        <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-6.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                        <div className="col-xs-6 col-lg-3">
+                        </Col>
+                        <Col xs={6} lg={3}>
                             <div className="item-certificate item-certificate__udemy">
                                 <img src="assets/images/certificates/udemy-3.jpg" className="img-responsive" alt="" />
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );

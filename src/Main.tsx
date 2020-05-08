@@ -8,10 +8,8 @@ import { Education } from '../src/Sections/Education';
 import { Header } from '../src/Sections/Header';
 import { Work } from '../src/Sections/Work';
 
-import 'styles/index.scss';
-
-export const Main: React.SFC = () => (
-    <div>
+export const Main: React.FC = () => (
+    <main>
         <Header />
         <Navigation />
         <About />
@@ -19,5 +17,5 @@ export const Main: React.SFC = () => (
         <Work />
         <Education />
         <Contacts />
-    </div>
+    </main>
 );

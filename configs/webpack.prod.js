@@ -8,10 +8,18 @@ module.exports = function (baseDir) {
             rules: [
                 // Styles
                 {
-                    test: /\.scss$/,
+                    test: /\.css$/,
                     use: [
                         MiniCssExtractPlugin.loader,
                         'css-loader',
+                        'sass-loader',
+                    ],
+                },
+                {
+                    test: /\.scss$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        { loader: 'css-loader', options: { url: false } },
                         'sass-loader',
                     ],
                     exclude: /node_modules/,

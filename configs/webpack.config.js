@@ -1,11 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const gitRevisionPlugin = new GitRevisionPlugin({ branch: true });
 
@@ -103,17 +102,35 @@ const config = {
 
     optimization: {
         minimizer: [
-            new UglifyJsPlugin({
+            new TerserPlugin({
                 test: /\.js($|\?)/i,
-                sourceMap: true,
                 exclude: [
                     /\.html$/,
                     /\.s?css$/,
-                    /node_modules\//
-                ]
+                    /node_modules\//,
+                    /libs\//,
+                ],
+                terserOptions: {
+                    output: {
+                        comments: false,
+                    },
+                },
+                extractComments: false,
             }),
             new OptimizeCssAssetsPlugin({}),
         ],
+        // minimizer: [
+        //     new UglifyJsPlugin({
+        //         test: /\.js($|\?)/i,
+        //         sourceMap: true,
+        //         exclude: [
+        //             /\.html$/,
+        //             /\.s?css$/,
+        //             /node_modules\//
+        //         ]
+        //     }),
+        //     new OptimizeCssAssetsPlugin({}),
+        // ],
         splitChunks: {
             cacheGroups: {
                 // Disable default webpack cacheGroups
@@ -203,10 +220,6 @@ module.exports = (env, argv) => {
                 },
             }
         };
-    }
-
-    if (env && env.analyze) {
-        config.plugins.push(new BundleAnalyzerPlugin());
     }
 
     // Import module RULES.

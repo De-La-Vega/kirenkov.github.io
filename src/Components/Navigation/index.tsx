@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Container } from 'react-grid-system';
 
 import { IMenuItem } from '../../models';
 import { scrollTo } from '../../Utils';
@@ -60,15 +61,13 @@ export class Navigation extends React.Component<{}, {}> {
 
     public render (): JSX.Element {
         return (
-            <div className="g-outer section-nav">
-                <div className="container g-inner">
-                    <div className="row">
-                        <div className="col-xs-9 col-md-4">
-                            <a href="#" className="section-nav__logo" onClick={(e) => this.handleClickScrollTo(e, 'section-header')}>
-                                Vitaliy <span className="section-nav__logo-secondary">Kirenkov</span>
-                            </a>
-                        </div>
-                        <div className="col-xs-3 col-md-8 navigation text-right">
+            <nav className="g-outer section-nav">
+                <Container className="g-inner">
+                    <div className="section-nav__wrapper">
+                        <a href="#" className="section-nav__logo" onClick={(e) => this.handleClickScrollTo(e, 'section-header')}>
+                            Vitaliy <span className="section-nav__logo-secondary">Kirenkov</span>
+                        </a>
+                        <div className="section-nav__navigation">
                             <button
                                 className="nav-toggle"
                                 onClick={this.toggleAdaptiveNav}
@@ -91,8 +90,8 @@ export class Navigation extends React.Component<{}, {}> {
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                </Container>
+            </nav>
         );
     }
 }

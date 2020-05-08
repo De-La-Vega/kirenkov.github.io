@@ -3,19 +3,20 @@
 
 .section-contacts {
     &__links {
+        display: flex;
+        justify-content: center;
+
         &-item {
-            display: inline-block;
-            padding-right: 1em;
-            padding-left: 1em;
+            &:not(#{&--email}) {
+                padding-right: 1em;
+                padding-left: 1em;
+            }
 
             &--email {
                 padding-right: 2em;
                 margin-right: 1em;
                 border-right: 1px solid $color-divider;
             }
-
-            &:first-child { padding-left: 0; }
-            &:last-child { padding-right: 0; }
         }
     }
 

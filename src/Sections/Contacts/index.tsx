@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import './index.scss';
 
-export const Contacts: React.SFC = () => (
-    <div className="g-outer section-contacts section-indent">
-        <div className="container g-inner text-center">
+export const Contacts: React.FC = () => (
+    <section className="g-outer section-contacts section-indent">
+        <div className="g-inner text-center">
             <h2>Contact <span>me</span></h2>
 
             <div className="section-contacts__links">
@@ -111,5 +111,5 @@ export const Contacts: React.SFC = () => (
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 );

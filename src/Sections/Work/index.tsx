@@ -1,13 +1,14 @@
 import * as React from 'react';
+import { Container } from 'react-grid-system';
 
 import { ChronologyItem } from '../../Components/ChronologyItem';
 import { IItem } from '../../models';
 
 import workJson from '../../Resources/work.json';
 
-export const Work: React.SFC = () => (
-    <div className="g-outer section-work section-indent">
-        <div className="container g-inner">
+export const Work: React.FC = () => (
+    <section className="g-outer section-work section-indent">
+        <Container className="g-inner">
             <h2 className="text-center">Work <span>experience</span></h2>
 
             <div>
@@ -17,6 +18,6 @@ export const Work: React.SFC = () => (
                     ))
                 }
             </div>
-        </div>
-    </div>
+        </Container>
+    </section>
 );

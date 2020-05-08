@@ -48,16 +48,18 @@
         &__logo { opacity: 1; }
     }
 
-    .navigation {
-        position: static;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__navigation {
         ul {
-            @include clearfix;
             @include list-null;
 
-            li {
-                display: inline-block;
+            display: flex;
 
+            li {
                 a {
                     @include fsi(14, 30);
                     @include transition(.2s);

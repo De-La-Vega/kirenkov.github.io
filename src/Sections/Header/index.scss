@@ -3,24 +3,24 @@
 
 .section-header {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: url(/assets/images/bg-top.jpg) no-repeat 50% 50%;
     background-size: cover;
 
     .data {
-        @include transform(translate(-50%, -50%));
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        position: relative;
+        flex-basis: 50%;
         text-align: center;
         text-transform: uppercase;
 
         .name {
             @include fsi(100, 100);
 
-            margin-bottom: .1em;
-            font-weight: bold;
+            margin: 0 0 .1em;
+            font-weight: 600;
             color: $color-white;
             text-shadow: 3px -3px 9px rgba(0, 0, 0, .4);
 
@@ -37,36 +37,13 @@
         .attention {
             @include fsi(35, 50);
 
-            position: relative;
             display: flex;
             align-items: center;
+            justify-content: center;
             margin-top: 1em;
-            font-weight: 300;
-            color: $color-white;
-            text-transform: none;
 
             &-logo {
-                flex-grow: 0;
-                flex-shrink: 10;
                 width: 8.5em;
-            }
-
-            &-text {
-                flex: 1;
-                padding-left: 1em;
-
-                a {
-                    font-weight: bold;
-                    color: $color-white;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            @media (max-width: $screen-sm-max) {
-                flex-direction: column;
             }
         }
     }

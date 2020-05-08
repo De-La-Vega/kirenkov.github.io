@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Col, Row } from 'react-grid-system';
 
 import { IItem } from '../../models';
 
@@ -13,10 +14,10 @@ export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
 
     return (
         <div className="chronology-item">
-            <div className="row">
-                <div className="col-xs-12 col-sm-10 col-sm-offset-1">
-                    <div className="row">
-                        <div className="col-xs-12 col-sm-5 col-md-3 col-left">
+            <Row>
+                <Col xs={12} sm={10} offset={{ sm: 1 }} >
+                    <Row>
+                        <Col xs={12} sm={5} md={3}>
                             <div className="date text-uppercase">
                                 <table>
                                     <tbody>
@@ -33,9 +34,9 @@ export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
+                        </Col>
 
-                        <div className="col-xs-12 col-sm-7 col-md-9 col-right">
+                        <Col xs={12} sm={7} md={9}>
                             <div className="data">
                                 <div className="title text-uppercase">
                                     {companyName} <span className="color-green">{`(${location.country}, ${location.city})`}</span>
@@ -70,10 +71,10 @@ export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
         </div>
     );
 };

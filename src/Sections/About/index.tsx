@@ -1,17 +1,18 @@
 import * as React from 'react';
+import { Col, Container, Row } from 'react-grid-system';
 
 import './index.scss';
 
-export const About: React.SFC = () => (
-    <div className="g-outer section-about section-indent">
-        <div className="container g-inner">
+export const About: React.FC = () => (
+    <section className="g-outer section-about section-indent">
+        <Container className="g-inner">
             <h2 className="text-center">About <span>me</span></h2>
 
-            <div className="row">
-                <div className="col-xs-12 col-sm-4 col-sm-offset-1 section-about__img">
+            <Row>
+                <Col xs={12} sm={4} offset={{ sm: 1 }} className="section-about__img">
                     <img src="assets/images/photo-about.jpg" className="img-responsive" alt="" />
-                </div>
-                <div className="col-xs-12 col-sm-6">
+                </Col>
+                <Col xs={12} sm={6}>
                     <div className="base-text">
                         <p>
                             I work in web-development for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
@@ -20,7 +21,7 @@ export const About: React.SFC = () => (
                             During this time i created <strong>200+</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
                         </p>
                         <p>
-                            Technologies i'm using: <strong>React.js</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
+                            Technologies i'm using: <strong>React</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
                         </p>
                         <p>
                             Good in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>.
@@ -40,8 +41,8 @@ export const About: React.SFC = () => (
                             Resume (ru)
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </Col>
+            </Row>
+        </Container>
+    </section>
 );

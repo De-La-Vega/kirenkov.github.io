@@ -1,13 +1,14 @@
 import * as React from 'react';
+import { Container } from 'react-grid-system';
 
 import { IItem } from '../../models';
 
 import { ChronologyItem } from '../../Components/ChronologyItem';
 import educationJson from '../../Resources/education.json';
 
-export const Education: React.SFC = () => (
-    <div className="g-outer section-education section-indent">
-        <div className="container g-inner">
+export const Education: React.FC = () => (
+    <section className="g-outer section-education section-indent">
+        <Container className="g-inner">
             <h2 className="text-center">My <span>education</span></h2>
 
             <div>
@@ -17,6 +18,6 @@ export const Education: React.SFC = () => (
                     ))
                 }
             </div>
-        </div>
-    </div>
+        </Container>
+    </section>
 );
