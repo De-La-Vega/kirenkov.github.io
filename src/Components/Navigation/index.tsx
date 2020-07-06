@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-grid-system';
 
 import { IMenuItem } from '../../models';
@@ -8,23 +8,16 @@ import navigationJson from '../../Resources/navigation.json';
 
 import './index.scss';
 
-export class Navigation extends React.Component<{}, {}> {
-    public componentWillUnmount (): void {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+export const Navigation: React.FC = () => {
+    const { body } = document;
 
-    public componentDidMount (): void {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    public handleScroll = (): void => {
-        const body = document.getElementsByTagName('body')[0];
+    const handleScroll = (): void => {
         const scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-        const header: any = document.getElementsByClassName('section-header')[0];
+        const header: HTMLDivElement = document.querySelector('.section-header');
         const headerHeight = header.offsetHeight;
 
-        const nav: any = document.getElementsByClassName('section-nav')[0];
+        const nav: HTMLDivElement = document.querySelector('.section-nav');
         const navHeight = nav.offsetHeight;
 
         if (scrolled > headerHeight - navHeight) {
@@ -32,66 +25,72 @@ export class Navigation extends React.Component<{}, {}> {
         } else {
             body.classList.remove('body-fixed');
         }
-    }
+    };
+
+    useEffect(
+        () => {
+            window.addEventListener('scroll', handleScroll);
+
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        },
+        []
+    );
 
     /**
      * Toggle adaptive nav.
      */
-    public toggleAdaptiveNav = (): void => {
-        const body = document.getElementsByTagName('body')[0];
-        const navList = document.getElementsByClassName('nav-list')[0];
-
+    const toggleAdaptiveNav = (): void => {
         if (!body.classList.contains('body-fixed')) {
             scrollTo('section-about');
         }
 
-        navList.classList.toggle('active');
-    }
+        document.querySelector('.nav-list').classList.toggle('active');
+    };
 
     /**
      * Scroll to section.
      */
-    public handleClickScrollTo = (event: React.SyntheticEvent<HTMLAnchorElement>, className: string): void => {
+    const handleClickScrollTo = (event: React.SyntheticEvent<HTMLAnchorElement>, className: string): void => {
         event.preventDefault();
 
-        document.getElementsByClassName('nav-list')[0].classList.remove('active');
+        document.querySelector('.nav-list').classList.remove('active');
 
         scrollTo(className);
-    }
+    };
 
-    public render (): JSX.Element {
-        return (
-            <nav className="g-outer section-nav">
-                <Container className="g-inner">
-                    <div className="section-nav__wrapper">
-                        <a href="#" className="section-nav__logo" onClick={(e) => this.handleClickScrollTo(e, 'section-header')}>
-                            Vitaliy <span className="section-nav__logo-secondary">Kirenkov</span>
-                        </a>
-                        <div className="section-nav__navigation">
-                            <button
-                                className="nav-toggle"
-                                onClick={this.toggleAdaptiveNav}
-                            >
-                                <i className="nav-toggle-stripe" />
-                                <i className="nav-toggle-stripe" />
-                                <i className="nav-toggle-stripe" />
-                            </button>
+    return (
+        <nav className="g-outer section-nav">
+            <Container className="g-inner">
+                <div className="section-nav__wrapper">
+                    <a href="#" className="section-nav__logo" onClick={(e) => handleClickScrollTo(e, 'section-header')}>
+                        Vitaliy <span className="section-nav__logo-secondary">Kirenkov</span>
+                    </a>
+                    <div className="section-nav__navigation">
+                        <button
+                            className="nav-toggle"
+                            onClick={toggleAdaptiveNav}
+                        >
+                            <i className="nav-toggle-stripe" />
+                            <i className="nav-toggle-stripe" />
+                            <i className="nav-toggle-stripe" />
+                        </button>
 
-                            <ul className="nav-list">
-                                {navigationJson.map((item: IMenuItem, index: number) => item.isVisible ?
-                                    (
-                                        <li key={index}>
-                                            <a href="#" onClick={(e) => this.handleClickScrollTo(e, item.link)}>
-                                                {item.label}
-                                            </a>
-                                        </li>
-                                    ) : null
-                                )}
-                            </ul>
-                        </div>
+                        <ul className="nav-list">
+                            {navigationJson.map((item: IMenuItem, index: number) => item.isVisible ?
+                                (
+                                    <li key={index}>
+                                        <a href="#" onClick={(e) => handleClickScrollTo(e, item.link)}>
+                                            {item.label}
+                                        </a>
+                                    </li>
+                                ) : null
+                            )}
+                        </ul>
                     </div>
-                </Container>
-            </nav>
-        );
-    }
-}
+                </div>
+            </Container>
+        </nav>
+    );
+};

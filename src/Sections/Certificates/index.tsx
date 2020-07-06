@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Col, Container, Row } from 'react-grid-system';
 
 import './index.scss';
@@ -9,7 +9,7 @@ export const Certificates: React.FC = () => (
             <h2 className="text-center">My <span>Certificates</span></h2>
 
             <Row>
-                <Col xs={12} sm={10} offset={{ sm: 1 }} >
+                <Col xs={12} md={10} offset={{ md: 1 }} >
                     <Row>
                         <Col xs={6}>
                             <div className="item-certificate item-certificate__scrum">

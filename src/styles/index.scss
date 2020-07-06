@@ -85,6 +85,10 @@ button::-moz-focus-inner {
     text-align: center;
 }
 
+.g-inner {
+    position: static !important;
+}
+
 h2 {
     @include fsi(46, 60);
 

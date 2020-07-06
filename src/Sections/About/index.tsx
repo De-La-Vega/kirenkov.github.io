@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Col, Container, Row } from 'react-grid-system';
 
 import './index.scss';
@@ -9,10 +9,10 @@ export const About: React.FC = () => (
             <h2 className="text-center">About <span>me</span></h2>
 
             <Row>
-                <Col xs={12} sm={4} offset={{ sm: 1 }} className="section-about__img">
+                <Col xs={12} md={4} offset={{ md: 1 }} className="section-about__img">
                     <img src="assets/images/photo-about.jpg" className="img-responsive" alt="" />
                 </Col>
-                <Col xs={12} sm={6}>
+                <Col xs={12} md={6}>
                     <div className="base-text">
                         <p>
                             I work in web-development for <strong>{(new Date()).getFullYear() - 2007}</strong> years.

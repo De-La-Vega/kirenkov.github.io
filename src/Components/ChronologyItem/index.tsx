@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Col, Row } from 'react-grid-system';
 
 import { IItem } from '../../models';
@@ -9,15 +9,15 @@ interface IProps {
     item: IItem;
 }
 
-export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
+export const ChronologyItem: React.FC<IProps> = ({ item }) => {
     const { companyName, location, responsibilities, period } = item;
 
     return (
         <div className="chronology-item">
             <Row>
-                <Col xs={12} sm={10} offset={{ sm: 1 }} >
+                <Col xs={12} md={10} offset={{ md: 1 }} >
                     <Row>
-                        <Col xs={12} sm={5} md={3}>
+                        <Col xs={12} md={5} lg={4}>
                             <div className="date text-uppercase">
                                 <table>
                                     <tbody>
@@ -36,7 +36,7 @@ export const ChronologyItem: React.SFC<IProps> = ({ item }) => {
                             </div>
                         </Col>
 
-                        <Col xs={12} sm={7} md={9}>
+                        <Col xs={12} md={7} lg={8}>
                             <div className="data">
                                 <div className="title text-uppercase">
                                     {companyName} <span className="color-green">{`(${location.country}, ${location.city})`}</span>
