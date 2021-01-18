@@ -9,16 +9,26 @@ export const Certificates: React.FC = () => (
             <h2 className="text-center">My <span>Certificates</span></h2>
 
             <Row>
-                <Col xs={12} md={10} offset={{ md: 1 }} >
+                <Col xs={12} lg={10} offset={{ lg: 1 }} >
                     <Row>
-                        <Col xs={6}>
-                            <div className="item-certificate item-certificate__scrum">
+                        <Col xs={6} lg={3}>
+                            <div className="item-certificate item-certificate__bordered">
                                 <img src="assets/images/certificates/csm.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
-                        <Col xs={6}>
-                            <div className="item-certificate item-certificate__scrum">
+                        <Col xs={6} lg={3}>
+                            <div className="item-certificate item-certificate__bordered">
                                 <img src="assets/images/certificates/acsm.png" className="img-responsive" alt="" />
+                            </div>
+                        </Col>
+                        <Col xs={6} lg={3}>
+                            <div className="item-certificate item-certificate__bordered">
+                                <img src="assets/images/certificates/operator.png" className="img-responsive" alt="" />
+                            </div>
+                        </Col>
+                        <Col xs={6} lg={3}>
+                            <div className="item-certificate item-certificate__bordered">
+                                <img src="assets/images/certificates/post-production.png" className="img-responsive" alt="" />
                             </div>
                         </Col>
                     </Row>

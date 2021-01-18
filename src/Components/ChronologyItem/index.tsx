@@ -15,9 +15,9 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
     return (
         <div className="chronology-item">
             <Row>
-                <Col xs={12} md={10} offset={{ md: 1 }} >
+                <Col xs={12} lg={10} offset={{ lg: 1 }} >
                     <Row>
-                        <Col xs={12} md={5} lg={4}>
+                        <Col xs={12} md={4}>
                             <div className="date text-uppercase">
                                 <table>
                                     <tbody>
@@ -36,7 +36,7 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
                             </div>
                         </Col>
 
-                        <Col xs={12} md={7} lg={8}>
+                        <Col xs={12} md={8}>
                             <div className="data">
                                 <div className="title text-uppercase">
                                     {companyName} <span className="color-green">{`(${location.country}, ${location.city})`}</span>
@@ -56,7 +56,10 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
                                                         </div>
                                                         {
                                                             responsibility.program && (
-                                                                <div>{responsibility.program}: <u>{responsibility.position}</u></div>
+                                                                <>
+                                                                    <div>{responsibility.program}</div>
+                                                                    <div>Position - <u>{responsibility.position}</u></div>
+                                                                </>
                                                             )
                                                         }
                                                         <ul>

@@ -6,10 +6,14 @@
 .item-certificate {
     margin-bottom: 20px;
 
+    img {
+        display: block;
+    }
+
     &__udemy {}
 
-    &__scrum {
-        padding: 20px;
+    &__bordered {
+        padding: 4px;
         border: 1px solid $color-divider;
     }
 }

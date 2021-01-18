@@ -11,7 +11,7 @@ export const Contacts: React.FC = () => (
                 <div className="section-contacts__links-item section-contacts__links-item--email">
                     <a
                         href="mailto:kirenkov.vitaliy@gmail.com"
-                        className="base-link section-contacts__link"
+                        className="section-contacts__link"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -31,7 +31,7 @@ export const Contacts: React.FC = () => (
                     <a
                         href="https://www.facebook.com/vitaliy.kirenkov"
                         target="_blank"
-                        className="base-link section-contacts__link"
+                        className="section-contacts__link"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -51,7 +51,7 @@ export const Contacts: React.FC = () => (
                     <a
                         href="https://ru.linkedin.com/in/kirenkov"
                         target="_blank"
-                        className="base-link section-contacts__link"
+                        className="section-contacts__link"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -71,7 +71,7 @@ export const Contacts: React.FC = () => (
                     <a
                         href="https://github.com/De-La-Vega/"
                         target="_blank"
-                        className="base-link section-contacts__link"
+                        className="section-contacts__link"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -91,7 +91,7 @@ export const Contacts: React.FC = () => (
                     <a
                         href="https://twitter.com/VitaliyKirenkov"
                         target="_blank"
-                        className="base-link section-contacts__link"
+                        className="section-contacts__link"
                     >
                         <i className="fab fa-twitter-square" />
 

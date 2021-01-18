@@ -9,34 +9,34 @@ export const About: React.FC = () => (
             <h2 className="text-center">About <span>me</span></h2>
 
             <Row>
-                <Col xs={12} md={4} offset={{ md: 1 }} className="section-about__img">
-                    <img src="assets/images/photo-about.jpg" className="img-responsive" alt="" />
+                <Col xs={12} md={4} lg={4} offset={{ lg: 1 }} className="section-about__img">
+                    <img src="assets/images/photo-about.png" className="img-responsive" alt="" />
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={8} lg={6}>
                     <div className="base-text">
                         <p>
-                            I work in web-development for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
+                            I work in IT for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
                         </p>
                         <p>
-                            During this time i created <strong>200+</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
+                            As <strong>Project manager</strong>, I ran a full-cycle IT-strategy project for a fashion house and several part-cycle projects.
                         </p>
                         <p>
-                            Technologies i'm using: <strong>React</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
+                            As <strong>Front-end developer</strong> I have created more than <strong>200</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
                         </p>
                         <p>
-                            Good in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>.
+                            Some of the technologies and frameworks used: <strong>React</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
                         </p>
                         <p>
-                            Also created <strong>plugin for Sketch</strong> - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
+                            Good knowledges in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>, <strong>Figma</strong>, <strong>Zeplin</strong>.
+                        </p>
+                        <p>
+                            Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
                         </p>
                     </div>
                     <div>
                         <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="btn-base" target="_blank">
                             Resume (en)
                         </a>
-
-                        &nbsp;&nbsp;&nbsp;
-
                         <a href="https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8" className="btn-base" target="_blank">
                             Resume (ru)
                         </a>

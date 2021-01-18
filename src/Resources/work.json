@@ -8,6 +8,58 @@
         },
         "responsibilities": [
             {
+                "company": "Fashion house in Russia",
+                "program": "IT-strategy development project",
+                "position": "Project manager",
+                "data": [
+                    "participation in all phases of the project (initiation, planning, execution, monitoring and control, closing)",
+                    "requirements management and prioritization",
+                    "demonstration of milestones to the customer",
+                    "regular communication and feedback",
+                    "lead time control and timely notification",
+                    "quality control",
+                    "risk analysis",
+                    "building trust, managing customer expectations",
+                    "team building",
+                    "onboarding new team members",
+                    "workflow",
+                    "conflict resolution, elimination of operational barriers",
+                    "task and subtask breakdown",
+                    "subcontractor assignment",
+                    "maintaining documentation and reporting"
+                ]
+            },
+            {
+                "company": "Leading oil company in Russia",
+                "program": "Project for the development of a search system for optimal cost indicators",
+                "position": "Lead Front-end developer",
+                "data": [
+                    "app development",
+                    "components library development",
+                    "formation of IT application architecture",
+                    "formation of UX-architecture",
+                    "tasks decomposition / allocation / prioritization",
+                    "interviewing",
+                    "staff training",
+                    "holding Agile ceremonies"
+                ]
+            },
+            {
+                "company": "Leading commercial bank in Azerbaijan",
+                "program": "Project for the development of a workplace for a bank employee",
+                "position": "Lead Front-end developer",
+                "data": [
+                    "formation of IT application architecture",
+                    "formation of UX-architecture",
+                    "interviewing",
+                    "tasks decomposition / allocation / prioritization",
+                    "technical onboarding",
+                    "staff training",
+                    "holding Agile ceremonies"
+                ]
+            },
+
+            {
                 "company": "Leading corporate bank in Azerbaijan",
                 "program": "The program of bank digitalization. The project for the development of digital laboratory and IT-architecture",
                 "position": "Tech-lead",
@@ -29,7 +81,7 @@
             {
                 "company": "TOP-3 Russian Bank",
                 "program": "UFS Component Library Project",
-                "position": "Senior Front-End developer/Project manager",
+                "position": "Senior Front-End developer / Project manager",
                 "data": [
                     "task decomposition, project management",
                     "resource planning, task allocation",
@@ -53,7 +105,7 @@
             {
                 "company": "TOP-3 Russian Bank",
                 "program": "Consulting center for foreign trade activities (corporate unit)",
-                "position": "Senior Front-End developer/Project manager",
+                "position": "Senior Front-End developer / Project manager",
                 "data": [
                     "control of development of the section through which bank users can create multiple documents (currency control, ruble payment) using one form",
                     "refinement of solution architecture",

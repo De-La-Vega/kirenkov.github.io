@@ -23,7 +23,11 @@
     &__link {
         @include fsi(40, 40);
 
+        color: $color-gray;
         transition: $transition-duration;
+
+        &:hover,
+        &:focus { color: $color-green; }
 
         &-icon {
             display: inline-block;

@@ -126,11 +126,11 @@ h2 {
 }
 
 .base-link {
-    color: $color-gray;
+    color: $color-green;
     transition: $transition-duration;
 
     &:hover,
-    &:focus { color: $color-green; }
+    &:focus { text-decoration: underline; }
 }
 
 .btn-base {
@@ -154,6 +154,10 @@ h2 {
     &:focus {
         color: $color-white;
         text-decoration: none;
+    }
+
+    & + & {
+        margin-left: 1em;
     }
 }
 
