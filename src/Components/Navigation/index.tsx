@@ -70,6 +70,7 @@ export const Navigation: React.FC = () => {
                     <div className="section-nav__navigation">
                         <button
                             role="button"
+                            aria-label="Toggle nav"
                             className="nav-toggle"
                             onClick={toggleAdaptiveNav}
                         >
