@@ -39,7 +39,7 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
                         <Col xs={12} md={8}>
                             <div className="data">
                                 <div className="title text-uppercase">
-                                    {companyName} <span className="color-green">{`(${location.country}, ${location.city})`}</span>
+                                    {companyName} <span className="color-green">{`(${location.city}, ${location.country})`}</span>
                                 </div>
                                 <div className="text base-text">
                                     <ul>

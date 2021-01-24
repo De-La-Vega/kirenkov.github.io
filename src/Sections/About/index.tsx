@@ -15,19 +15,19 @@ export const About: React.FC = () => (
                 <Col xs={12} md={8} lg={6}>
                     <div className="base-text">
                         <p>
-                            I work in IT for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
+                            I’ve been working in IT for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
                         </p>
                         <p>
-                            As <strong>Project manager</strong>, I ran a full-cycle IT-strategy project for a fashion house and several part-cycle projects.
+                            As <strong>Project Manager</strong>, I ran a full-cycle IT-strategy project for a fashion house and several part-cycle projects.
                         </p>
                         <p>
-                            As <strong>Front-end developer</strong> I have created more than <strong>200</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
+                            As <strong>Front-end Developer</strong> I have created more than <strong>200</strong> websites (personal, landing pages, online-stores, sites for plants and automotive companies).
                         </p>
                         <p>
                             Some of the technologies and frameworks used: <strong>React</strong>, <strong>Redux</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Webpack</strong>, <strong>SASS</strong>, <strong>Bootstrap</strong> and etc.
                         </p>
                         <p>
-                            Good knowledges in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>, <strong>Figma</strong>, <strong>Zeplin</strong>.
+                            High efficiency in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>, <strong>Figma</strong>, <strong>Zeplin</strong>.
                         </p>
                         <p>
                             Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid" rel="noopener">Bootstrap grid</a>.

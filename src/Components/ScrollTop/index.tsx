@@ -54,7 +54,7 @@ export const ScrollTop: React.FC = () => {
             })}
             onClick={handleClick}
         >
-            <svg className="scroll-up__svg" viewBox="-2 -2 52 52">
+            <svg className="scroll-up__svg" viewBox="-2 -2 52 52" width="50" height="50">
                 <path
                     ref={svgPath}
                     className="scroll-up__svg-path"
