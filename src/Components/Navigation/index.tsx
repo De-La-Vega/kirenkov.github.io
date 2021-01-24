@@ -69,6 +69,7 @@ export const Navigation: React.FC = () => {
                     </a>
                     <div className="section-nav__navigation">
                         <button
+                            role="button"
                             className="nav-toggle"
                             onClick={toggleAdaptiveNav}
                         >

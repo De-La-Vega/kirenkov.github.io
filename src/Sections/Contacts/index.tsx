@@ -12,6 +12,7 @@ export const Contacts: React.FC = () => (
                     <a
                         href="mailto:kirenkov.vitaliy@gmail.com"
                         className="section-contacts__link"
+                        rel="noopener"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -32,6 +33,7 @@ export const Contacts: React.FC = () => (
                         href="https://www.facebook.com/vitaliy.kirenkov"
                         target="_blank"
                         className="section-contacts__link"
+                        rel="noopener"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -52,6 +54,7 @@ export const Contacts: React.FC = () => (
                         href="https://ru.linkedin.com/in/kirenkov"
                         target="_blank"
                         className="section-contacts__link"
+                        rel="noopener"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -72,6 +75,7 @@ export const Contacts: React.FC = () => (
                         href="https://github.com/De-La-Vega/"
                         target="_blank"
                         className="section-contacts__link"
+                        rel="noopener"
                     >
                         <svg
                             className="section-contacts__link-icon"
@@ -92,6 +96,7 @@ export const Contacts: React.FC = () => (
                         href="https://twitter.com/VitaliyKirenkov"
                         target="_blank"
                         className="section-contacts__link"
+                        rel="noopener"
                     >
                         <i className="fab fa-twitter-square" />
 

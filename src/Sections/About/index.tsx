@@ -30,14 +30,14 @@ export const About: React.FC = () => (
                             Good knowledges in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>, <strong>Figma</strong>, <strong>Zeplin</strong>.
                         </p>
                         <p>
-                            Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid">Bootstrap grid</a>.
+                            Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid" rel="noopener">Bootstrap grid</a>.
                         </p>
                     </div>
                     <div>
-                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="btn-base" target="_blank">
+                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="btn-base" target="_blank" rel="noopener">
                             Resume (en)
                         </a>
-                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8" className="btn-base" target="_blank">
+                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8" className="btn-base" target="_blank" rel="noopener">
                             Resume (ru)
                         </a>
                     </div>
