@@ -10,26 +10,28 @@ module.exports = function (baseDir) {
                 // Styles
                 {
                     test: /\.s?css$/,
-                    use: [
-                        {
-                            loader: 'style-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
-                        }
-                    ]
+                    use: ['style-loader', 'css-loader', 'sass-loader'],
+                    // use: [
+                    //     {
+                    //         loader: 'style-loader',
+                    //         options: {
+                    //             injectType: 'singletonStyleTag',
+                    //             sourceMap: true
+                    //         }
+                    //     },
+                    //     {
+                    //         loader: 'css-loader',
+                    //         options: {
+                    //             sourceMap: true
+                    //         }
+                    //     },
+                    //     {
+                    //         loader: 'sass-loader',
+                    //         options: {
+                    //             sourceMap: true
+                    //         }
+                    //     }
+                    // ]
                 },
             ]
         },

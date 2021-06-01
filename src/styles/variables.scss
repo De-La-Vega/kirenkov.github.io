@@ -1,13 +1,31 @@
-$font-family-base: 'Open Sans', Arial, Helvetica, sans-serif;
+$base: 4px;
+
+$font-family-base: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
 
 $color-green: #19bd9b;
 $color-gray: #2a2b2d;
 $color-white: #fff;
-
 $color-divider: #ddd;
 
-$screen-xs-max: 767px;
-$screen-sm-max: 991px;
-$screen-md: 992px;
+$font-size-xs: 16px;
+$font-size-s: 26px;
+$font-size-m: 36px;
+$font-size-l: 46px;
+$font-size-xl: 100px;
+
+$line-height-xs: 28px;
+$line-height-s: 40px;
+$line-height-m: 54px;
+$line-height-l: 60px;
+$line-height-xl: 120px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$screen-xs-max: 47.9375em; // 767px
+$screen-s-max: 61.9375em; // 991px
+$screen-m: 62em; // 992px
 
 $transition-duration: .2s;

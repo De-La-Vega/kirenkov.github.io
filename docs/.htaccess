@@ -1,5 +1,0 @@
-<IfModule mod_expires.c>
-  <FilesMatch \.(gif|png|jpg|jpeg|ogg|mp4|mkv|flv|swf|wmv|asf|asx|wma|wax|wmx|wm|css|js)$>
-    Header set Cache-Control "max-age=31536000"
-  </FilesMatch>
-</IfModule>

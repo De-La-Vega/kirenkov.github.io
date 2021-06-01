@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-grid-system';
+import { Container } from 'reactstrap';
 
 import { IItem } from '../../models';
 
@@ -9,7 +9,7 @@ import educationJson from '../../Resources/education.json';
 export const Education: React.FC = () => (
     <section className="g-outer section-education section-indent">
         <Container className="g-inner">
-            <h2 className="text-center">My <span>education</span></h2>
+            <h2 className="text-center h2">My <span className="h2__helper">education</span></h2>
 
             <div>
                 {

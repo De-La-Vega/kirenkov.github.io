@@ -1,19 +1,17 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
-.section-certificates {}
+.section-certificates {
+    &__item {
+        margin-bottom: rem($base * 5);
 
-.item-certificate {
-    margin-bottom: 20px;
-
-    img {
-        display: block;
+        &--bordered {
+            padding: rem($base);
+            border: 1px solid $color-divider;
+        }
     }
 
-    &__udemy {}
-
-    &__bordered {
-        padding: 4px;
-        border: 1px solid $color-divider;
+    &__img {
+        display: block;
     }
 }

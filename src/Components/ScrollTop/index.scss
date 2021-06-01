@@ -1,5 +1,5 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
 .scroll-up {
     $size: 50px;
@@ -17,7 +17,7 @@
     border-radius: 100%;
     box-shadow: inset 0 0 0 4px $color-divider;
     opacity: 0;
-    transition: $transition-duration;
+    transition: opacity $transition-duration, transform $transition-duration;
     transform: translateY(25px);
 
     &--active {
@@ -31,10 +31,11 @@
         fill: none;
         stroke: $color-green;
         stroke-width: 4;
-        transition: $transition-duration;
     }
 
-    &:hover { color: $color-green; }
+    &:hover {
+        color: $color-green;
+    }
 
     &::before {
         position: absolute;
@@ -44,13 +45,13 @@
         width: $size;
         height: $size;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: $font-weight-bold;
         line-height: 48px;
         text-align: center;
         content: '↑';
     }
 
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: $screen-s-max) {
         display: none;
     }
 }

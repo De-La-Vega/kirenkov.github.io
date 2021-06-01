@@ -144,6 +144,10 @@
             "start": {
                 "month": "June",
                 "year": "2015"
+            },
+            "end": {
+                "month": "March",
+                "year": "2021"
             }
         }
     },

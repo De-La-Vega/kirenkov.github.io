@@ -4,19 +4,8 @@ import './index.scss';
 
 export const Header: React.FC = () => (
     <section className="g-outer section-header">
-        <div className="data">
-            <h1 className="name">Vitaliy <span>Kirenkov</span></h1>
-            {
-                false && (
-                    <div className="attention">
-                        <div className="attention-logo">
-                            <a target="_blank" href="https://www.youtube.com/channel/UCn-P_F0tfY21cfnkyv2lsRQ?sub_confirmation=1">
-                                <img src="/assets/images/youtube-subscribe.png" className="img-responsive" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                )
-            }
+        <div className="section-header__data">
+            <h1 className="section-header__full-name">Vitaliy <span className="section-header__second-name">Kirenkov</span></h1>
         </div>
     </section>
 );

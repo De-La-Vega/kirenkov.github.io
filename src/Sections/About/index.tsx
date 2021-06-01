@@ -1,19 +1,19 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-grid-system';
+import { Col, Container, Row } from 'reactstrap';
 
 import './index.scss';
 
 export const About: React.FC = () => (
     <section className="g-outer section-about section-indent">
         <Container className="g-inner">
-            <h2 className="text-center">About <span>me</span></h2>
+            <h2 className="text-center h2">About <span className="h2__helper">me</span></h2>
 
             <Row>
-                <Col xs={12} md={4} lg={4} offset={{ lg: 1 }} className="section-about__img">
-                    <img src="assets/images/photo-about.png" className="img-responsive" alt="" />
+                <Col xs="12" md="4" lg={{ offset: 1, size: 4 }}>
+                    <img src="assets/images/photo-about.png" className="section-about__photo img-responsive" alt="" width="350" height="350" />
                 </Col>
-                <Col xs={12} md={8} lg={6}>
-                    <div className="base-text">
+                <Col xs="12" md="8" lg="6">
+                    <div className="section-about__text">
                         <p>
                             I’ve been working in IT for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
                         </p>
@@ -30,14 +30,14 @@ export const About: React.FC = () => (
                             High efficiency in design programs: <strong>Sketch</strong>, <strong>Photoshop</strong>, <strong>Figma</strong>, <strong>Zeplin</strong>.
                         </p>
                         <p>
-                            Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="base-link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid" rel="noopener">Bootstrap grid</a>.
+                            Also created <strong>plugin for Sketch</strong> (in 2017) - <a className="section-about__link" target="_blank" href="https://github.com/De-La-Vega/BootstrapGrid" rel="noopener">Bootstrap grid</a>.
                         </p>
                     </div>
-                    <div>
-                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="btn-base" target="_blank" rel="noopener">
+                    <div className="section-about__btns">
+                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86HSHRqT2VrMEdJT3M" className="section-about__btn" target="_blank" rel="noopener">
                             Resume (en)
                         </a>
-                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8" className="btn-base" target="_blank" rel="noopener">
+                        <a href="https://drive.google.com/open?id=0BzEzLZK8t86Hb3hIRmlKUjZEVG8" className="section-about__btn" target="_blank" rel="noopener">
                             Resume (ru)
                         </a>
                     </div>

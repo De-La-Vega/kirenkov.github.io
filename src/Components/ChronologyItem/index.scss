@@ -1,92 +1,120 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
-$item-vertical-indent: 3em;
-$item-vertical-indent-mobile: 1em;
-$col-vertical-indent: 3em;
-$col-vertical-indent-mobile: 1em;
+@mixin content-vertical-indents () {
+    $col-vertical-indent: rem($base * 4);
+    $col-vertical-indent-mobile: rem($base * 3);
+
+    padding-top: $col-vertical-indent;
+    padding-bottom: $col-vertical-indent;
+
+    @media (max-width: $screen-xs-max) {
+        padding-top: $col-vertical-indent-mobile;
+        padding-bottom: $col-vertical-indent-mobile;
+    }
+}
 
 .chronology-item {
-    &:not(:first-child) {
-        padding-top: $item-vertical-indent;
-    }
+    $item-vertical-indent: rem($base * 7);
 
     &:not(:last-child) {
         padding-bottom: $item-vertical-indent;
-        border-bottom: 1px solid $color-divider;
     }
 
-    td.divider {
-        padding: 0 .3em;
+    & + & {
+        padding-top: $item-vertical-indent;
+        border-top: 1px solid $color-divider;
+    }
+}
+
+.chronology-period {
+    @include content-vertical-indents();
+
+    display: inline-grid;
+    grid-template-areas:
+        'month-start . month-end'
+        'year-start divider year-end';
+
+    &__month-start,
+    &__month-end {
+        font-size: rem($font-size-xs);
+        line-height: rem($line-height-xs);
     }
 
-    .date,
-    .data {
-        padding-top: $col-vertical-indent;
-        padding-bottom: $col-vertical-indent;
+    &__year-start,
+    &__year-end,
+    &__divider {
+        font-size: rem($font-size-m);
+        font-weight: $font-weight-semi-bold;
+        line-height: rem($line-height-m);
     }
 
-    .date {
-        .months {
-            @include fsi(14, 21);
+    &__month-start {
+        grid-area: month-start;
+    }
+
+    &__month-end {
+        grid-area: month-end;
+        color: $color-green;
+    }
+
+    &__year-start {
+        grid-area: year-start;
+    }
+
+    &__year-end {
+        grid-area: year-end;
+        color: $color-green;
+    }
+
+    &__divider {
+        grid-area: divider;
+        padding-right: rem($base * 2);
+        padding-left: rem($base * 2);
+    }
+}
+
+.chronology-data {
+    @include content-vertical-indents();
+
+    padding-left: rem($base * 6);
+    border-left: 1px solid $color-divider;
+
+    &__title {
+        margin-bottom: rem($base);
+        font-size: rem($font-size-s);
+        line-height: rem($line-height-s);
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        font-size: rem($font-size-xs);
+        line-height: rem($line-height-xs);
+        list-style: none;
+    }
+
+    &__item {
+        &--string {
+            margin-left: rem($base * 10);
+            list-style-type: circle;
         }
 
-        .years {
-            @include fsi(36, 36);
-
-            font-weight: 600;
-        }
-    }
-
-    .name {
-        @include fsi(16, 24);
-
-        margin-bottom: .3em;
-    }
-
-    .description {
-        @include fsi(12, 18);
-    }
-
-    .data {
-        padding-left: 2.4em;
-        border-left: 1px solid $color-divider;
-
-        .title {
-            @include fsi(18, 27);
-
-            margin-bottom: .5em;
-        }
-
-        .text {
-            ul {
-                padding: 0 0 0 1.5em;
-                margin: 0;
+        &--object {
+            &:not(:first-child) {
+                margin-top: rem($base * 3);
             }
         }
     }
 
     @media (max-width: $screen-xs-max) {
-        padding-top: $item-vertical-indent-mobile;
-        padding-bottom: $item-vertical-indent-mobile;
-
-        .date,
-        .data {
-            padding-top: $col-vertical-indent-mobile;
-            padding-bottom: $col-vertical-indent-mobile;
-        }
-
-        .data {
-            padding-left: 0;
-            border-left: none;
-        }
+        padding-left: 0;
+        border-left: 0;
     }
 }
 
-.responsibility--object {
-    position: relative;
-    margin-left: -1.5em;
-    list-style-type: none;
-
-    &:not(:first-child) { margin-top: 1em; }
+.chronology-responsibility {
+    &__title {
+        font-weight: $font-weight-bold;
+    }
 }

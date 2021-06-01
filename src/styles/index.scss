@@ -1,84 +1,18 @@
+@import './functions.scss';
 @import './variables.scss';
-@import './mixins.scss';
 
 /* ------------------------ GENERAL ------------------------ */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    position: relative;
-    height: 100%;
-    min-height: 100%;
-}
-
-html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    width: 100%;
     padding: 0;
     margin: 0;
     font-family: $font-family-base;
-    font-size: 62.5%;
     color: $color-gray;
     background-color: $color-white;
 }
 
-img { border: none; }
-
-p {
-    padding: 0;
-    margin: .8em 0;
-}
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-form {
-    padding: 0;
-    margin: 0;
-}
-
-input,
-textarea,
-select,
-button {
-    font-family: $font-family-base;
-}
-
-input,
-textarea,
-select {
-    font-size: 12px;
-    background-color: $color-white;
-    outline: none;
-}
-
-textarea {
-    overflow: auto;
-    resize: none;
-}
-
-:focus { outline: none; }
-
-:-moz-focus-inner { border: 0; }
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
 .img-responsive {
     max-width: 100%;
+    height: auto;
 }
 
 .text-center {
@@ -89,75 +23,36 @@ button::-moz-focus-inner {
     position: static !important;
 }
 
-h2 {
-    @include fsi(46, 60);
-
+.h2 {
     padding: 0;
-    margin: 0 0 .5em;
-    font-weight: 500;
+    margin: 0 0 rem($base * 5);
+    font-size: rem($font-size-l);
+    font-weight: $font-weight-regular;
+    line-height: rem($line-height-l);
     text-transform: uppercase;
-    letter-spacing: .02em;
+    letter-spacing: rem(1px);
 
-    span { color: $color-green; }
-
-    &.inverted { color: $color-white; }
+    &__helper {
+        color: $color-green;
+    }
 
     @media (max-width: $screen-xs-max) {
-        @include fsi(40, 50);
+        font-size: rem($font-size-m);
+        line-height: rem($line-height-m);
     }
 }
 
 .section-indent {
-    padding-top: 6em;
-    padding-bottom: 6em;
+    padding-top: rem($base * 15);
+    padding-bottom: rem($base * 15);
 
-    &:not(:first-child) {
+    & + & {
         border-top: 2px solid $color-divider;
     }
 
     @media (max-width: $screen-xs-max) {
-        padding-top: 4em;
-        padding-bottom: 4em;
-    }
-}
-
-.base-text {
-    @include fsi(15, 26);
-}
-
-.base-link {
-    color: $color-green;
-    transition: $transition-duration;
-
-    &:hover,
-    &:focus { text-decoration: underline; }
-}
-
-.btn-base {
-    @include fsi(14, 20);
-
-    display: inline-block;
-    padding: 1em 1.4285em;
-    color: $color-white;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: $color-green;
-    border: none;
-    transition: $transition-duration;
-
-    &:hover {
-        color: $color-white;
-        background-color: darken($color-green, 10%);
-    }
-
-    &:active,
-    &:focus {
-        color: $color-white;
-        text-decoration: none;
-    }
-
-    & + & {
-        margin-left: 1em;
+        padding-top: rem($base * 10);
+        padding-bottom: rem($base * 10);
     }
 }
 

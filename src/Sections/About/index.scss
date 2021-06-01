@@ -1,15 +1,66 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
 .section-about {
-    &__img {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
+    &__photo {
+        display: block;
+        margin: 0 auto;
 
         @media (max-width: $screen-xs-max) {
-            margin-bottom: 2em;
+            margin-bottom: rem($base * 5);
+        }
+    }
+
+    &__text {
+        font-size: rem($font-size-xs);
+        line-height: rem($line-height-xs);
+
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__btns {
+        display: flex;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: rem($base * 3) rem($base * 5);
+        font-size: rem($font-size-xs);
+        line-height: rem($line-height-xs);
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: $color-green;
+        border: 0;
+        transition: background-color $transition-duration;
+
+        &:hover {
+            color: $color-white;
+            background-color: darken($color-green, 10%);
+        }
+
+        &:active,
+        &:focus {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        & + & {
+            margin-left: rem($base * 3);
+        }
+    }
+
+    &__link {
+        color: $color-green;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $color-green;
+            text-decoration: underline;
         }
     }
 }

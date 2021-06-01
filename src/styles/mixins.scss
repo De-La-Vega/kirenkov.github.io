@@ -1,4 +1,0 @@
-@mixin fsi ($fontSize, $lineHeight, $context: 10) {
-    font-size: #{$fontSize/$context}em;
-    line-height: #{$lineHeight/$fontSize}em;
-}

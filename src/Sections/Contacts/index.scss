@@ -1,41 +1,38 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
 .section-contacts {
-    &__links {
+    &__list {
         display: flex;
         justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 
-        &-item {
-            &:not(#{&--email}) {
-                padding-right: 1em;
-                padding-left: 1em;
-            }
+    &__item {
+        padding: rem($base) rem($base * 3);
 
-            &--email {
-                padding-right: 2em;
-                margin-right: 1em;
-                border-right: 1px solid $color-divider;
-            }
+        &--separator {
+            width: 1px;
+            padding: 0;
+            margin: 0 rem($base * 2);
+            background-color: $color-divider;
         }
     }
 
     &__link {
-        @include fsi(40, 40);
-
+        display: block;
         color: $color-gray;
-        transition: $transition-duration;
+        transition: color $transition-duration;
 
         &:hover,
-        &:focus { color: $color-green; }
-
-        &-icon {
-            display: inline-block;
-            width: .875em;
-            height: 1em;
-            overflow: visible;
-            font-size: inherit;
-            vertical-align: -.125em;
+        &:focus {
+            color: $color-green;
         }
+    }
+
+    &__icon {
+        display: block;
     }
 }

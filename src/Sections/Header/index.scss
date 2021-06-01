@@ -1,5 +1,5 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import '../../styles/functions.scss';
 
 .section-header {
     position: relative;
@@ -10,42 +10,23 @@
     background: url(/assets/images/bg-top.jpg) no-repeat 50% 50%;
     background-size: cover;
 
-    .data {
+    &__data {
         position: relative;
         flex-basis: 30%;
         text-align: center;
         text-transform: uppercase;
+    }
 
-        .name {
-            @include fsi(100, 100);
+    &__full-name {
+        font-size: rem($font-size-xl);
+        font-weight: $font-weight-semi-bold;
+        line-height: rem($line-height-xl);
+        color: $color-white;
+        text-shadow: 3px -3px 9px rgba(0, 0, 0, .4);
+    }
 
-            margin: 0 0 .1em;
-            font-weight: 600;
-            color: $color-white;
-            text-shadow: 3px -3px 9px rgba(0, 0, 0, .4);
-
-            span { color: $color-green; }
-        }
-
-        .post {
-            @include fsi(30, 30);
-
-            font-weight: 300;
-            color: $color-white;
-        }
-
-        .attention {
-            @include fsi(35, 50);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 1em;
-
-            &-logo {
-                width: 8.5em;
-            }
-        }
+    &__second-name {
+        color: $color-green;
     }
 
     &::before {
@@ -60,6 +41,9 @@
     }
 
     @media (max-width: $screen-xs-max) {
-        .data { font-size: .4em; }
+        &__full-name {
+            font-size: rem($font-size-l);
+            line-height: rem($line-height-l);
+        }
     }
 }

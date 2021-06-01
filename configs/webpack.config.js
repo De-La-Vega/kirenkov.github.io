@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
-const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const { GitRevisionPlugin } = require('git-revision-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const gitRevisionPlugin = new GitRevisionPlugin({ branch: true });
@@ -15,7 +16,7 @@ const config = {
 
     entry: {
         main: [
-            'core-js/fn/promise',
+            // 'core-js/fn/promise',
             path.resolve(APP_DIR, 'index')
         ],
     },
@@ -33,20 +34,10 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.ts(x?)$/,
-                use: [
-                    'awesome-typescript-loader',
-                    {
-                        loader: 'tslint-loader',
-                        options: {
-                            tsConfigFile: './tsconfig.json',
-                            transpileOnly: true,
-                        }
-                    },
-
-                ],
-                include: APP_DIR
+                test: /\.tsx?$/,
+                loader: 'ts-loader'
             },
+
             // Fonts
             {
                 test: /\.woff?2(\?v=\d+\.\d+\.\d+)?$/,
@@ -117,7 +108,7 @@ const config = {
                 },
                 extractComments: false,
             }),
-            new OptimizeCssAssetsPlugin({}),
+            new CssMinimizerPlugin(),
         ],
         // minimizer: [
         //     new UglifyJsPlugin({
@@ -129,7 +120,7 @@ const config = {
         //             /node_modules\//
         //         ]
         //     }),
-        //     new OptimizeCssAssetsPlugin({}),
+        //     new CssMinimizerPlugin(),
         // ],
         splitChunks: {
             cacheGroups: {
@@ -165,14 +156,15 @@ const config = {
     },
 
     plugins: [
-        new CleanWebpackPlugin(
-            [path.join(__dirname, '../build')],
-            {
-                root: path.resolve(__dirname, '..')
-            }
-        ),
-        new CopyWebpackPlugin(
-            [
+        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(
+        //     [path.join(__dirname, '../build')],
+        //     {
+        //         root: path.resolve(__dirname, '..')
+        //     }
+        // ),
+        new CopyWebpackPlugin({
+            patterns: [
                 // {
                 //     from: path.join(APP_DIR, 'assets/fonts'),
                 //     to: path.join(__dirname, '../docs/assets/fonts')
@@ -186,7 +178,7 @@ const config = {
                     to: path.join(__dirname, '../docs')
                 }
             ]
-        ),
+        }),
         new webpack.ContextReplacementPlugin(/moment[\\\/]locale$/, /^\.\/(en-gb|ru)$/),
     ]
 };

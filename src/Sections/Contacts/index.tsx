@@ -5,10 +5,10 @@ import './index.scss';
 export const Contacts: React.FC = () => (
     <section className="g-outer section-contacts section-indent">
         <div className="g-inner text-center">
-            <h2>Contact <span>me</span></h2>
+            <h2 className="h2">Contact <span className="h2__helper">me</span></h2>
 
-            <div className="section-contacts__links">
-                <div className="section-contacts__links-item section-contacts__links-item--email">
+            <ul className="section-contacts__list">
+                <li className="section-contacts__item">
                     <a
                         href="mailto:kirenkov.vitaliy@gmail.com"
                         className="section-contacts__link"
@@ -16,7 +16,7 @@ export const Contacts: React.FC = () => (
                         aria-label="E-mail"
                     >
                         <svg
-                            className="section-contacts__link-icon"
+                            className="section-contacts__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
                             width="35px"
@@ -28,8 +28,9 @@ export const Contacts: React.FC = () => (
                             />
                         </svg>
                     </a>
-                </div>
-                <div className="section-contacts__links-item">
+                </li>
+                <li className="section-contacts__item section-contacts__item--separator" />
+                <li className="section-contacts__item">
                     <a
                         href="https://www.facebook.com/vitaliy.kirenkov"
                         target="_blank"
@@ -38,7 +39,7 @@ export const Contacts: React.FC = () => (
                         aria-label="Facebook"
                     >
                         <svg
-                            className="section-contacts__link-icon"
+                            className="section-contacts__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
                             width="35px"
@@ -50,8 +51,8 @@ export const Contacts: React.FC = () => (
                             />
                         </svg>
                     </a>
-                </div>
-                <div className="section-contacts__links-item">
+                </li>
+                <li className="section-contacts__item">
                     <a
                         href="https://ru.linkedin.com/in/kirenkov"
                         target="_blank"
@@ -60,7 +61,7 @@ export const Contacts: React.FC = () => (
                         aria-label="LinkedIn"
                     >
                         <svg
-                            className="section-contacts__link-icon"
+                            className="section-contacts__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
                             width="35px"
@@ -72,8 +73,8 @@ export const Contacts: React.FC = () => (
                             />
                         </svg>
                     </a>
-                </div>
-                <div className="section-contacts__links-item">
+                </li>
+                <li className="section-contacts__item">
                     <a
                         href="https://github.com/De-La-Vega/"
                         target="_blank"
@@ -82,7 +83,7 @@ export const Contacts: React.FC = () => (
                         aria-label="GitHub"
                     >
                         <svg
-                            className="section-contacts__link-icon"
+                            className="section-contacts__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
                             width="35px"
@@ -94,8 +95,8 @@ export const Contacts: React.FC = () => (
                             />
                         </svg>
                     </a>
-                </div>
-                <div className="section-contacts__links-item">
+                </li>
+                <li className="section-contacts__item">
                     <a
                         href="https://twitter.com/VitaliyKirenkov"
                         target="_blank"
@@ -104,7 +105,7 @@ export const Contacts: React.FC = () => (
                         aria-label="Twitter"
                     >
                         <svg
-                            className="section-contacts__link-icon"
+                            className="section-contacts__icon"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
                             width="35px"
@@ -116,8 +117,8 @@ export const Contacts: React.FC = () => (
                             />
                         </svg>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
 );
