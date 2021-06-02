@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Row } from 'reactstrap';
 
 import { IItem } from '../../models';
 
@@ -14,10 +13,10 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
 
     return (
         <div className="chronology-item">
-            <Row>
-                <Col xs="12" lg={{ offset: 1, size: 10 }}>
-                    <Row>
-                        <Col xs="12" md="4">
+            <div className="row">
+                <div className="col-12 col-lg-10 offset-lg-1">
+                    <div className="row">
+                        <div className="col-12 col-md-4">
                             <div className="chronology-period">
                                 <div className="chronology-period__month-start">{period.start.month}</div>
                                 <div className="chronology-period__month-end">{period.end ? period.end.month : null}</div>
@@ -25,9 +24,9 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
                                 <div className="chronology-period__year-end">{period.end ? period.end.year : 'NOW'}</div>
                                 <div className="chronology-period__divider">-</div>
                             </div>
-                        </Col>
+                        </div>
 
-                        <Col xs="12" md="8">
+                        <div className="col-12 col-md-8">
                             <div className="chronology-data">
                                 <div className="chronology-data__title">
                                     {companyName} <span className="color-green">{`(${location.city}, ${location.country})`}</span>
@@ -64,10 +63,10 @@ export const ChronologyItem: React.FC<IProps> = ({ item }) => {
                                     }
                                 </ul>
                             </div>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
