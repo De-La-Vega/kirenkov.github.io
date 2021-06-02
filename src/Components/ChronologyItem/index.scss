@@ -3,7 +3,7 @@
 
 @mixin content-vertical-indents () {
     $col-vertical-indent: rem($base * 4);
-    $col-vertical-indent-mobile: rem($base * 3);
+    $col-vertical-indent-mobile: rem($base);
 
     padding-top: $col-vertical-indent;
     padding-bottom: $col-vertical-indent;

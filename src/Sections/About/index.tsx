@@ -1,18 +1,17 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
 
 import './index.scss';
 
 export const About: React.FC = () => (
     <section className="g-outer section-about section-indent">
-        <Container className="g-inner">
+        <div className="container g-inner">
             <h2 className="text-center h2">About <span className="h2__helper">me</span></h2>
 
-            <Row>
-                <Col xs="12" md="4" lg={{ offset: 1, size: 4 }}>
+            <div className="row">
+                <div className="col-12 col-md-4 col-lg-4 offset-lg-1">
                     <img src="assets/images/photo-about.png" className="section-about__photo img-responsive" alt="" width="350" height="350" />
-                </Col>
-                <Col xs="12" md="8" lg="6">
+                </div>
+                <div className="col-12 col-md-8 col-lg-6">
                     <div className="section-about__text">
                         <p>
                             I’ve been working in IT for <strong>{(new Date()).getFullYear() - 2007}</strong> years.
@@ -41,8 +40,8 @@ export const About: React.FC = () => (
                             Resume (ru)
                         </a>
                     </div>
-                </Col>
-            </Row>
-        </Container>
+                </div>
+            </div>
+        </div>
     </section>
 );

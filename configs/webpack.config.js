@@ -16,7 +16,6 @@ const config = {
 
     entry: {
         main: [
-            // 'core-js/fn/promise',
             path.resolve(APP_DIR, 'index')
         ],
     },
@@ -36,45 +35,6 @@ const config = {
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader'
-            },
-
-            // Fonts
-            {
-                test: /\.woff?2(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            limit: 10000,
-                            mimetype: 'application/font-woff',
-                            name: '[path][name].[ext]'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            limit: 10000,
-                            mimetype: 'application/octet-stream',
-                            name: '[path][name].[ext]'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]'
-                        }
-                    }
-                ]
             },
             // Images
             {
@@ -110,18 +70,6 @@ const config = {
             }),
             new CssMinimizerPlugin(),
         ],
-        // minimizer: [
-        //     new UglifyJsPlugin({
-        //         test: /\.js($|\?)/i,
-        //         sourceMap: true,
-        //         exclude: [
-        //             /\.html$/,
-        //             /\.s?css$/,
-        //             /node_modules\//
-        //         ]
-        //     }),
-        //     new CssMinimizerPlugin(),
-        // ],
         splitChunks: {
             cacheGroups: {
                 // Disable default webpack cacheGroups
@@ -157,18 +105,8 @@ const config = {
 
     plugins: [
         new CleanWebpackPlugin(),
-        // new CleanWebpackPlugin(
-        //     [path.join(__dirname, '../build')],
-        //     {
-        //         root: path.resolve(__dirname, '..')
-        //     }
-        // ),
         new CopyWebpackPlugin({
             patterns: [
-                // {
-                //     from: path.join(APP_DIR, 'assets/fonts'),
-                //     to: path.join(__dirname, '../docs/assets/fonts')
-                // },
                 {
                     from: path.join(APP_DIR, 'assets/images'),
                     to: path.join(__dirname, '../docs/assets/images')

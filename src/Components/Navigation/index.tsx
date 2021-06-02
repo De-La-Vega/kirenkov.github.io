@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Container } from 'reactstrap';
 
 import { IMenuItem } from '../../models';
 import { scrollTo } from '../../Utils';
@@ -54,7 +53,7 @@ export const Navigation: React.FC = () => {
 
     return (
         <nav className="g-outer section-nav">
-            <Container className="g-inner">
+            <div className="container g-inner">
                 <div className="section-nav__wrapper">
                     <a href="#" className="section-nav__full-name" onClick={(e) => handleClickScrollTo(e, 'section-header')}>
                         Vitaliy <span className="section-nav__second-name">Kirenkov</span>
@@ -84,7 +83,7 @@ export const Navigation: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-            </Container>
+            </div>
         </nav>
     );
 };

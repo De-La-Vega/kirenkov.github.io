@@ -5,7 +5,7 @@
         "indentation": 4,
         "string-quotes": "single",
         "number-leading-zero": "never",
-        "unit-allowed-list": ["px", "%", "deg", "s", "ms", "em", "vh"],
+        "unit-allowed-list": ["px", "%", "deg", "s", "ms", "em", "vh", "rem"],
         "at-rule-no-unknown": [true, {
             "ignoreAtRules": ["include", "mixin", "function", "return"]
         }]
